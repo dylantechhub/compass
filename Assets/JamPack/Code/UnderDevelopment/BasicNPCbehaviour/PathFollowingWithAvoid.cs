@@ -44,7 +44,7 @@ public class PathFollowingWithAvoid : MonoBehaviour
         
         if (distanceToAvoidObject < avoidDistance)
         {
-            Vector2 runDirection = vectorToAvoidObject * -1f;
+            Vector2 runDirection = vectorToAvoidObject;
             runDirection = runDirection.normalized;
             Debug.DrawRay(avoidObject.position, runDirection, Color.red);
 
