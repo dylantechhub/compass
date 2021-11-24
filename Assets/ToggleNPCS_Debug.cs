@@ -19,31 +19,27 @@ public class ToggleNPCS_Debug : MonoBehaviour
         if(Input.GetKey(KeyCode.Alpha1)){
             // enable first
 
-            DisableAll();
+            SetActiveNPC(0);
 
-            npcList[0].SetActive(true);
-
-        }else if (Input.GetKey(KeyCode.Alpha2)) {
-            DisableAll();
-            if(npcList.Length > 1)
-                npcList[1].SetActive(true);
-        } else if (Input.GetKey(KeyCode.Alpha3)) {
-            DisableAll();
-            if (npcList.Length > 2)
-                npcList[2].SetActive(true);
-        } else if (Input.GetKey(KeyCode.Alpha3)) {
-            DisableAll();
-            if (npcList.Length > 3)
-                npcList[3].SetActive(true);
-        } else if (Input.GetKey(KeyCode.Alpha4)) {
-            DisableAll();
-            if (npcList.Length > 4)
-                npcList[4].SetActive(true);
-        } else if (Input.GetKey(KeyCode.Alpha5)) {
-            DisableAll();
-            if (npcList.Length > 5)
-                npcList[5].SetActive(true);
         }
+        else if (Input.GetKey(KeyCode.Alpha2)) {
+            SetActiveNPC(1);
+        } else if (Input.GetKey(KeyCode.Alpha3)) {
+            SetActiveNPC(2);
+        } else if (Input.GetKey(KeyCode.Alpha4)) {
+            SetActiveNPC(3);
+        } else if (Input.GetKey(KeyCode.Alpha5)) {
+            SetActiveNPC(4);
+        } else if (Input.GetKey(KeyCode.Alpha6)) {
+            SetActiveNPC(5);
+        }
+    }
+
+    private void SetActiveNPC(int num)
+    {
+        DisableAll();
+        if (npcList.Length > num)
+            npcList[num].SetActive(true);
     }
 
     private void DisableAll(){
