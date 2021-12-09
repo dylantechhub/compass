@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PlayerIdle
+  m_Name: SlimeIdle
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -21,15 +21,15 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 893601111442392554, guid: a47cd4a2a1534934285986fc86c0a437, type: 3}
-    - time: 0.13333334
+    - time: 0.21666667
       value: {fileID: -5261272457377317178, guid: a47cd4a2a1534934285986fc86c0a437, type: 3}
-    - time: 0.28333333
+    - time: 0.45
       value: {fileID: 8923070696172171761, guid: a47cd4a2a1534934285986fc86c0a437, type: 3}
-    - time: 0.41666666
+    - time: 0.65
       value: {fileID: 3978950615773688926, guid: a47cd4a2a1534934285986fc86c0a437, type: 3}
-    - time: 0.56666666
+    - time: 0.8833333
       value: {fileID: -955465707210452915, guid: a47cd4a2a1534934285986fc86c0a437, type: 3}
-    - time: 0.7
+    - time: 1.1
       value: {fileID: 6992286749877270770, guid: a47cd4a2a1534934285986fc86c0a437, type: 3}
     attribute: m_Sprite
     path: 
@@ -61,7 +61,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.71666664
+    m_StopTime: 1.1166667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

@@ -26,15 +26,20 @@ public class entityMover_01 : MonoBehaviour
 	[Header("Random moving")]
 	public float wanderDistance        = 0.0f;
 	public float stopWanderingDistance = 0.0f;
+	public Vector2 normalizedWanderDirection;
+	
+
 
 	[Header("Rigidbody")]
 	public Rigidbody2D entityRigidbody;
 
-	[Header("Tracking & avoiding")]
-	public Transform transformToTrackOrAvoid;
-	public float trackWhenWithin = 0.0f;
-	public float trackDistance   = 0.0f;
-	public float avoidDistance   = 0.0f;
+	[Header("Tracking")]
+	public Transform transformToTrack;
+	public float trackDistance = 0.0f;
+
+	[Header("Avoiding")]
+	public Transform transformToAvoid;
+	public float avoidDistance;
 
 	private Vector2 usersInputVector()
 	{
@@ -60,14 +65,7 @@ public class entityMover_01 : MonoBehaviour
 		Vector2 vectorToPathGoal = ( Vector2 )goalPositions[currentPosition].position - ( Vector2 )transform.position;
 		Vector2 normalizedPathDirection = vectorToPathGoal.normalized;
 
-		if( physicsMode == false )
-		{
-			kinematicMovement( normalizedPathDirection );
-		}
-		else
-		{
-			physicalMovement( normalizedPathDirection );
-		}
+		transform.Translate( normalizedPathDirection * moveSpeed * Time.deltaTime );
 
 		float distanceToGoal = vectorToPathGoal.magnitude;
 		if( distanceToGoal < stopDistance )
@@ -82,28 +80,21 @@ public class entityMover_01 : MonoBehaviour
 
 	private void trackingLogic()
 	{
-		Vector2 vectorToTrackObject = transformToTrackOrAvoid.position - transform.position;
+		Vector2 vectorToTrackObject = transformToTrack.position - transform.position;
 		float distanceToTrackObject = vectorToTrackObject.magnitude;
 
-		if( distanceToTrackObject < trackWhenWithin )
+		if( distanceToTrackObject < trackDistance )
 		{
 			Vector2 runDirection = vectorToTrackObject;
 			runDirection = runDirection.normalized;
 
-			if( physicsMode == false )
-			{
-				kinematicMovement( runDirection );
-			}
-			else
-			{
-				physicalMovement( runDirection );
-			}
+			transform.Translate( runDirection * moveSpeed * Time.deltaTime );
 		}
 	}
 
 	private void avoidLogic()
 	{
-		Vector2 vectorToAvoidObject = transformToTrackOrAvoid.position - transform.position;
+		Vector2 vectorToAvoidObject = transformToAvoid.position - transform.position;
 		float distanceToAvoidObject = vectorToAvoidObject.magnitude;
 
 		if( distanceToAvoidObject < avoidDistance )
@@ -111,14 +102,7 @@ public class entityMover_01 : MonoBehaviour
 			Vector2 runDirection = vectorToAvoidObject * -1f;
 			runDirection = runDirection.normalized;
 
-			if( physicsMode == false )
-			{
-				kinematicMovement( runDirection );
-			}
-			else
-			{
-				physicalMovement( runDirection );
-			}
+			transform.Translate( runDirection * moveSpeed * Time.deltaTime  );
 		}
 	}
 
@@ -130,16 +114,9 @@ public class entityMover_01 : MonoBehaviour
 	private void randomMovingLogic()
 	{
 		Vector2 vectorToGoal = wanderingGoalPosition - ( Vector2 )transform.position;
-		Vector2 normalizedWanderDirection = vectorToGoal.normalized;
+		normalizedWanderDirection = vectorToGoal.normalized;
 
-		if( physicsMode == false )
-		{
-			kinematicMovement( normalizedWanderDirection );
-		}
-		else
-		{
-			physicalMovement( normalizedWanderDirection );
-		}
+		transform.Translate( normalizedWanderDirection * moveSpeed * Time.deltaTime );
 
 		float distanceToWanderingGoal = vectorToGoal.magnitude;
 		if( distanceToWanderingGoal < stopWanderingDistance )
@@ -160,12 +137,12 @@ public class entityMover_01 : MonoBehaviour
 
 	void Start()
 	{
-		if( randomMoving )
+		if( randomMoving == true )
 		{
 			findNewGoal();
 		}
 
-		if( physicsMode )
+		if( physicsMode == true )
 		{
 			entityRigidbody = GetComponent<Rigidbody2D>();
 		}
@@ -173,35 +150,41 @@ public class entityMover_01 : MonoBehaviour
 
 	void FixedUpdate()
 	{
-		if( controlled && physicsMode )
+		if( controlled == true )
 		{
-			playerController( usersInputVector() );
+			if( physicsMode == true )
+			{
+				playerController( usersInputVector() );
+			}
 		}
 	}
 
 	void Update()
 	{
-		if( controlled && physicsMode == false )
+		if( controlled == true )
 		{
-			playerController( usersInputVector() );
+			if( physicsMode == false )
+			{
+				playerController( usersInputVector() );
+			}
 		}
 
-		if( randomMoving )
+		if( randomMoving == true )
 		{
 			randomMovingLogic();
 		}
 		
-		if( avoiding )
+		if( avoiding == true )
 		{
 			avoidLogic();
 		}
 
-		if( tracking )
+		if( tracking == true )
 		{
 			trackingLogic();
 		}
 
-		if( pathFollowing )
+		if( pathFollowing == true )
 		{
 			pathFollowingLogic();
 		}
