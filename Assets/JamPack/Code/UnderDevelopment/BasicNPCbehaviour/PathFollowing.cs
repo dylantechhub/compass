@@ -11,6 +11,7 @@ public class PathFollowing : MonoBehaviour
     public int currentPosition = 0;
     public Transform[] goalPositions;
     public float stopDistance = 0.1f;
+    public Vector2 normalizedDirection;
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +32,7 @@ public class PathFollowing : MonoBehaviour
     void Update()
     {
         Vector2 vectorToGoal = (Vector2)goalPositions[currentPosition].position - (Vector2)transform.position;
-        Vector2 normalizedDirection = vectorToGoal.normalized;
+        normalizedDirection = vectorToGoal.normalized;
         // move towards the goal position    
 
         Debug.DrawLine(transform.position, (Vector2)goalPositions[currentPosition].position, Color.green);
