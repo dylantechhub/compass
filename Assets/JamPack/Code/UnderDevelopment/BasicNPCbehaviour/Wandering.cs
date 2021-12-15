@@ -12,6 +12,8 @@ public class Wandering : MonoBehaviour
     public float wanderDistance = 1f;
     public float stopDistance = 0.1f;
 
+    public Vector2 normalizedDirection;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,8 +28,9 @@ public class Wandering : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // 
         Vector2 vectorToGoal = goalPosition - (Vector2)transform.position;
-        Vector2 normalizedDirection = vectorToGoal.normalized;
+        normalizedDirection = vectorToGoal.normalized;
         // move towards the goal position    
 
         Debug.DrawLine(transform.position, goalPosition, Color.green);

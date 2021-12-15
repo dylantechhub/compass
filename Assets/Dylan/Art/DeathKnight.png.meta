@@ -1,46 +1,28 @@
 fileFormatVersion: 2
-guid: 8c1297e8670106549aae9bd057c8791f
+guid: f288a8f83634fdd4782bbbd3c827c6c7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7757882217614093036
-    second: WalkingDemo1_0
+      213: -8185484998265166673
+    second: DeathKnight_0
   - first:
-      213: 5535741787569859546
-    second: WalkingDemo1_1
+      213: 3355239672573877006
+    second: DeathKnight_1
   - first:
-      213: -4314121571324918690
-    second: WalkingDemo1_2
+      213: -5782327347260665547
+    second: DeathKnight_2
   - first:
-      213: -5356650311081245739
-    second: WalkingDemo1_3
+      213: 836961562223708857
+    second: DeathKnight_3
   - first:
-      213: 5781471820535673173
-    second: WalkingDemo1_4
+      213: -6629452467645435805
+    second: DeathKnight_4
   - first:
-      213: 694983854772295606
-    second: WalkingDemo1_5
+      213: 8530554147342187680
+    second: DeathKnight_5
   - first:
-      213: 8936170625884404015
-    second: WalkingDemo1_6
-  - first:
-      213: -243106952788424516
-    second: WalkingDemo1_7
-  - first:
-      213: -7141651256215818181
-    second: WalkingDemo1_8
-  - first:
-      213: 4374072406321120268
-    second: WalkingDemo1_9
-  - first:
-      213: -1832969422037990679
-    second: WalkingDemo1_10
-  - first:
-      213: -8442760428234221206
-    second: WalkingDemo1_11
-  - first:
-      213: -2178342205372321393
-    second: WalkingDemo1_12
+      213: -9183818756503091892
+    second: DeathKnight_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -154,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WalkingDemo1_0
+      name: DeathKnight_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 384
-        width: 128
-        height: 128
+        y: 768
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cea253e16c889ab60800000000000000
-      internalID: 7757882217614093036
+      spriteID: fa4ad1c33c0576e80800000000000000
+      internalID: -8185484998265166673
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkingDemo1_1
+      name: DeathKnight_1
       rect:
         serializedVersion: 2
-        x: 128
-        y: 384
-        width: 128
-        height: 128
+        x: 0
+        y: 512
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,62 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: adb236083d7e2dc40800000000000000
-      internalID: 5535741787569859546
+      spriteID: e0b501494b4309e20800000000000000
+      internalID: 3355239672573877006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkingDemo1_2
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 384
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e54045fb9492124c0800000000000000
-      internalID: -4314121571324918690
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WalkingDemo1_3
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 384
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5d3440e3cea59a5b0800000000000000
-      internalID: -5356650311081245739
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WalkingDemo1_4
+      name: DeathKnight_2
       rect:
         serializedVersion: 2
         x: 0
         y: 256
-        width: 128
-        height: 128
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,41 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 551b5fd3df9eb3050800000000000000
-      internalID: 5781471820535673173
+      spriteID: 531508be9eb01cfa0800000000000000
+      internalID: -5782327347260665547
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkingDemo1_5
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 256
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6b7955c322415a900800000000000000
-      internalID: 694983854772295606
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WalkingDemo1_6
+      name: DeathKnight_3
       rect:
         serializedVersion: 2
         x: 256
         y: 256
-        width: 128
-        height: 128
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -294,20 +213,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f29be10a6d7a30c70800000000000000
-      internalID: 8936170625884404015
+      spriteID: 9ba000f3b1c7d9b00800000000000000
+      internalID: 836961562223708857
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkingDemo1_7
+      name: DeathKnight_4
       rect:
         serializedVersion: 2
-        x: 384
+        x: 512
         y: 256
-        width: 128
-        height: 128
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -315,104 +234,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb84e94b38f40acf0800000000000000
-      internalID: -243106952788424516
+      spriteID: 36038a2ea147ff3a0800000000000000
+      internalID: -6629452467645435805
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkingDemo1_8
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 128
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b30b8834502c3ec90800000000000000
-      internalID: -7141651256215818181
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WalkingDemo1_9
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 128
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c04cb90cda3d3bc30800000000000000
-      internalID: 4374072406321120268
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WalkingDemo1_10
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 128
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9e2c54ba50cff86e0800000000000000
-      internalID: -1832969422037990679
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WalkingDemo1_11
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 128
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a69df574f1a45da80800000000000000
-      internalID: -8442760428234221206
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WalkingDemo1_12
+      name: DeathKnight_5
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 128
-        height: 128
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -420,8 +255,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f81ba893e49f4c1e0800000000000000
-      internalID: -2178342205372321393
+      spriteID: 0acf099dccd926670800000000000000
+      internalID: 8530554147342187680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathKnight_6
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c454019bf758c8080800000000000000
+      internalID: -9183818756503091892
       vertices: []
       indices: 
       edges: []

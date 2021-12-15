@@ -1,46 +1,49 @@
 fileFormatVersion: 2
-guid: 8c1297e8670106549aae9bd057c8791f
+guid: a46ceaf0c7b9ace4e91b0d40c9ca2585
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7757882217614093036
-    second: WalkingDemo1_0
+      213: 7484234509732986754
+    second: Armor_Concept_ANimation_0
   - first:
-      213: 5535741787569859546
-    second: WalkingDemo1_1
+      213: -5933466488235352579
+    second: Armor_Concept_ANimation_1
   - first:
-      213: -4314121571324918690
-    second: WalkingDemo1_2
+      213: 5256296005706825525
+    second: Armor_Concept_ANimation_2
   - first:
-      213: -5356650311081245739
-    second: WalkingDemo1_3
+      213: 2738244607963776747
+    second: Armor_Concept_ANimation_3
   - first:
-      213: 5781471820535673173
-    second: WalkingDemo1_4
+      213: 1860353328489641444
+    second: Armor_Concept_ANimation_4
   - first:
-      213: 694983854772295606
-    second: WalkingDemo1_5
+      213: -6184566715416779270
+    second: Armor_Concept_ANimation_5
   - first:
-      213: 8936170625884404015
-    second: WalkingDemo1_6
+      213: 2119792725476908951
+    second: Armor_Concept_ANimation_6
   - first:
-      213: -243106952788424516
-    second: WalkingDemo1_7
+      213: 2484378427508504236
+    second: Armor_Concept_ANimation_7
   - first:
-      213: -7141651256215818181
-    second: WalkingDemo1_8
+      213: -4402965017701342569
+    second: Armor_Concept_ANimation_8
   - first:
-      213: 4374072406321120268
-    second: WalkingDemo1_9
+      213: -315823711551426383
+    second: Armor_Concept_ANimation_9
   - first:
-      213: -1832969422037990679
-    second: WalkingDemo1_10
+      213: -7198241387352765323
+    second: Armor_Concept_ANimation_10
   - first:
-      213: -8442760428234221206
-    second: WalkingDemo1_11
+      213: -8867969274480531533
+    second: Armor_Concept_ANimation_11
   - first:
-      213: -2178342205372321393
-    second: WalkingDemo1_12
+      213: 5237713934191135924
+    second: Armor_Concept_ANimation_12
+  - first:
+      213: -5164462384769321437
+    second: Armor_Concept_ANimation_13
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -85,7 +88,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 128
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -154,97 +157,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WalkingDemo1_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 384
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cea253e16c889ab60800000000000000
-      internalID: 7757882217614093036
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WalkingDemo1_1
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 384
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: adb236083d7e2dc40800000000000000
-      internalID: 5535741787569859546
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WalkingDemo1_2
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 384
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e54045fb9492124c0800000000000000
-      internalID: -4314121571324918690
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WalkingDemo1_3
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 384
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5d3440e3cea59a5b0800000000000000
-      internalID: -5356650311081245739
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WalkingDemo1_4
+      name: Armor_Concept_ANimation_0
       rect:
         serializedVersion: 2
         x: 0
         y: 256
-        width: 128
-        height: 128
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,41 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 551b5fd3df9eb3050800000000000000
-      internalID: 5781471820535673173
+      spriteID: 28fba5822a75dd760800000000000000
+      internalID: 7484234509732986754
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkingDemo1_5
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 256
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6b7955c322415a900800000000000000
-      internalID: 694983854772295606
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WalkingDemo1_6
+      name: Armor_Concept_ANimation_1
       rect:
         serializedVersion: 2
         x: 256
         y: 256
-        width: 128
-        height: 128
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -294,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f29be10a6d7a30c70800000000000000
-      internalID: 8936170625884404015
+      spriteID: dfd1c027aa718ada0800000000000000
+      internalID: -5933466488235352579
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkingDemo1_7
+      name: Armor_Concept_ANimation_2
       rect:
         serializedVersion: 2
-        x: 384
+        x: 512
         y: 256
-        width: 128
-        height: 128
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -315,20 +213,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb84e94b38f40acf0800000000000000
-      internalID: -243106952788424516
+      spriteID: 53fb57e3e5d12f840800000000000000
+      internalID: 5256296005706825525
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkingDemo1_8
+      name: Armor_Concept_ANimation_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 128
-        width: 128
-        height: 128
+        x: 768
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -336,20 +234,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b30b8834502c3ec90800000000000000
-      internalID: -7141651256215818181
+      spriteID: be64fcd86f2300620800000000000000
+      internalID: 2738244607963776747
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkingDemo1_9
+      name: Armor_Concept_ANimation_4
       rect:
         serializedVersion: 2
-        x: 128
-        y: 128
-        width: 128
-        height: 128
+        x: 1024
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -357,20 +255,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c04cb90cda3d3bc30800000000000000
-      internalID: 4374072406321120268
+      spriteID: 4e53755ee7d41d910800000000000000
+      internalID: 1860353328489641444
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkingDemo1_10
+      name: Armor_Concept_ANimation_5
       rect:
         serializedVersion: 2
-        x: 256
-        y: 128
-        width: 128
-        height: 128
+        x: 1280
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -378,20 +276,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e2c54ba50cff86e0800000000000000
-      internalID: -1832969422037990679
+      spriteID: af5e0ede6510c2aa0800000000000000
+      internalID: -6184566715416779270
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkingDemo1_11
+      name: Armor_Concept_ANimation_6
       rect:
         serializedVersion: 2
-        x: 384
-        y: 128
-        width: 128
-        height: 128
+        x: 1536
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -399,20 +297,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a69df574f1a45da80800000000000000
-      internalID: -8442760428234221206
+      spriteID: 79f128fa0440b6d10800000000000000
+      internalID: 2119792725476908951
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkingDemo1_12
+      name: Armor_Concept_ANimation_7
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca6b94b54094a7220800000000000000
+      internalID: 2484378427508504236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armor_Concept_ANimation_8
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 128
-        height: 128
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -420,8 +339,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f81ba893e49f4c1e0800000000000000
-      internalID: -2178342205372321393
+      spriteID: 792a071f4a685e2c0800000000000000
+      internalID: -4402965017701342569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armor_Concept_ANimation_9
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b0f455f108fd9bf0800000000000000
+      internalID: -315823711551426383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armor_Concept_ANimation_10
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57cc25b9895ba1c90800000000000000
+      internalID: -7198241387352765323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armor_Concept_ANimation_11
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b7628bede4aee480800000000000000
+      internalID: -8867969274480531533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armor_Concept_ANimation_12
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bc8392921910b840800000000000000
+      internalID: 5237713934191135924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armor_Concept_ANimation_13
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32635f3d2d42458b0800000000000000
+      internalID: -5164462384769321437
       vertices: []
       indices: 
       edges: []
