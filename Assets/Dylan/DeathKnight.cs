@@ -14,6 +14,9 @@ public class DeathKnight : MonoBehaviour
     public float attackDistance = 1f;
     public float moveForce = 5f;
 
+    public float attackCooldownTimer = 0;
+    public float attackCooldownLimit = 1f;
+
     public DeathKnightArtController art;
 
     Vector2 toPlayer;
@@ -24,12 +27,16 @@ public class DeathKnight : MonoBehaviour
         toPlayer = playerRef.position - transform.position;
         Debug.DrawRay(transform.position, toPlayer, Color.yellow);
 
-        if(toPlayer.magnitude < attackDistance)
+        if(toPlayer.magnitude < attackDistance && attackCooldownLimit < attackCooldownTimer)
         {
             attack1.Invoke();
 
-            art.Attack1();
+            art.PlayAttack1();
+            attackCooldownTimer = 0;
+            
         }
+        attackCooldownTimer += Time.deltaTime;
+
 
         // Testing!!! 
         if (Input.GetKeyDown(KeyCode.P)){

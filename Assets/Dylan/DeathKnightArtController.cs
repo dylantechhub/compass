@@ -13,6 +13,8 @@ public class DeathKnightArtController : MonoBehaviour
 
     public bool isWalking; // not needed, just for demonstrations
 
+    public ParticleSystem attackParticles; 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,8 +48,8 @@ public class DeathKnightArtController : MonoBehaviour
         anim.SetTrigger("Attack1");
     }
 
-    public void Attack1()
+    public void Attack1Effect()
     {
-        anim.SetTrigger("Attack1");
+        attackParticles.Play();
     }
 }
