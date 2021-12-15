@@ -18,7 +18,7 @@ public class SimpleMover : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         // Move at units per second
-        if( moving ){
+        if( moving){
             transform.Translate(mover * Time.deltaTime);
         }
 
