@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class BabySlimes : MonoBehaviour
 {
-    public GameObject babySlimePrefab;
-    public GameObject slime;
-    public Vector2 slimeLocation;
+    public Transform babySlime;
+    public Transform player;
 
-    private void Update()
-    {
-        slimeLocation = slime.transform.position;
-    }
+    public float radius;
 
     public void SpawnSlimeBabies()
-    { 
-        Instantiate(babySlimePrefab, slimeLocation , Quaternion.identity);
+    {
+        Vector3 spawnPosition = Random.insideUnitCircle * radius;
+        spawnPosition = transform.position + spawnPosition;
+        Transform spwanedThing = Instantiate(babySlime, spawnPosition, transform.rotation);
+        PhysicsPathFollowing physicsPF = spwanedThing.GetComponent<PhysicsPathFollowing>();
+        physicsPF.goalPositions[0] = player.transform;
     }
 
 }
