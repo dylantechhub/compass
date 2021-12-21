@@ -507,21 +507,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1766475867829850880, guid: 2f197a3ba3cfcf749a85a9865dd10262,
-        type: 3}
-      propertyPath: m_BodyType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1766475867829850880, guid: 2f197a3ba3cfcf749a85a9865dd10262,
-        type: 3}
-      propertyPath: m_GravityScale
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1766475867829850881, guid: 2f197a3ba3cfcf749a85a9865dd10262,
-        type: 3}
-      propertyPath: physicsMode
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1766475867829850881, guid: 2f197a3ba3cfcf749a85a9865dd10262,
         type: 3}
       propertyPath: transformToTrack

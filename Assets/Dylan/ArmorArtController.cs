@@ -12,6 +12,8 @@ public class ArmorArtController : MonoBehaviour
 
     public bool usePlayerInput = false;
 
+    public Wandering ai;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -62,6 +64,11 @@ public class ArmorArtController : MonoBehaviour
         // get a ref to the parent control script
         // get the vector that ccorresponds to the direction we are moving
         // assign those to the xInput and yInput values
+
+        Vector2 localVector = ai.normalizedDirection;
+        xInput = localVector.x;
+        yInput = localVector.y;
+
     }
 
 }

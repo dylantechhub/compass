@@ -31,6 +31,9 @@ public class Wandering : MonoBehaviour
         // 
         Vector2 vectorToGoal = goalPosition - (Vector2)transform.position;
         normalizedDirection = vectorToGoal.normalized;
+        float x = normalizedDirection.x;
+        float y = normalizedDirection.y;
+
         // move towards the goal position    
 
         Debug.DrawLine(transform.position, goalPosition, Color.green);

@@ -358,21 +358,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gargoyle NPC
       objectReference: {fileID: 0}
-    - target: {fileID: 1953423375468660876, guid: 47cdebdcb530c6a4a92e8eeb61f39791,
-        type: 3}
-      propertyPath: damage
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 3112834809816328997, guid: 47cdebdcb530c6a4a92e8eeb61f39791,
         type: 3}
       propertyPath: playerPosition
       value: 
       objectReference: {fileID: 1969622638}
-    - target: {fileID: 3559279118598793524, guid: 47cdebdcb530c6a4a92e8eeb61f39791,
-        type: 3}
-      propertyPath: goalPositions.Array.size
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 3559279118598793524, guid: 47cdebdcb530c6a4a92e8eeb61f39791,
         type: 3}
       propertyPath: goalPositions.Array.data[0]
