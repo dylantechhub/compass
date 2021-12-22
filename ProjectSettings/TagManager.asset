@@ -11,10 +11,10 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - NPCBody
+  - NPCAttack
+  - PlayerBody
+  - PlayerAttack
   - 
   - 
   - 
@@ -40,4 +40,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2804354237
+    locked: 0
+  - name: Midground
+    uniqueID: 2409565661
+    locked: 0
+  - name: Foreground
+    uniqueID: 3654948649
     locked: 0
