@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5167429311744590020}
   - component: {fileID: 5167429311744590017}
   - component: {fileID: 5167429311744590018}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DeathKnightPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 5167429312332449833}
   - component: {fileID: 5167429312332449834}
   - component: {fileID: 5167429312332449835}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Attack1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -325,6 +325,7 @@ MonoBehaviour:
   yInput: 0
   isWalking: 0
   usePlayerInput: 0
+  ai: {fileID: 0}
 --- !u!1001 &6479858941091721416
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -391,6 +392,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SplashParticles
+      objectReference: {fileID: 0}
+    - target: {fileID: 6479858941657796365, guid: aa9f5c7f27a72594c9e69b8774d5eeda,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa9f5c7f27a72594c9e69b8774d5eeda, type: 3}
