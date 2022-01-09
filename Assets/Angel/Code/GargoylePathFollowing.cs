@@ -12,13 +12,6 @@ public class GargoylePathFollowing : MonoBehaviour
     public Transform[] goalPositions;
     public float stopDistance = 0.1f;
     public Vector2 normalizedDirection;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
     private void NextPath()
     {
         currentPosition++;
