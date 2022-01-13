@@ -340,6 +340,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerPrefab (Animated)-v4
       objectReference: {fileID: 0}
+    - target: {fileID: 2133691883149334063, guid: e676938a3f6be15488c352a244313a72,
+        type: 3}
+      propertyPath: maxHealth
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2133691883149334063, guid: e676938a3f6be15488c352a244313a72,
+        type: 3}
+      propertyPath: currentHealth
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e676938a3f6be15488c352a244313a72, type: 3}
 --- !u!50 &657715850 stripped

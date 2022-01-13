@@ -13,8 +13,7 @@ GameObject:
   - component: {fileID: 2133691883149334058}
   - component: {fileID: 2133691883149334061}
   - component: {fileID: 2133691883149334063}
-  - component: {fileID: 7268447672904055829}
-  - component: {fileID: 6215651328044691682}
+  - component: {fileID: 1402841059254069599}
   m_Layer: 8
   m_Name: PlayerPrefab (Animated)-v4
   m_TagString: Player
@@ -106,8 +105,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isActivated: 1
-  currentHealth: 1
-  maxHealth: 1
+  currentHealth: 10
+  maxHealth: 10
   destroyOnDeath: 0
   deathEffectPrefab: {fileID: 0}
   damagedEvent:
@@ -128,25 +127,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 4013608470995893985, guid: f8cee1270ae65d441afb2f95848df99c,
+          type: 3}
+        m_TargetAssemblyTypeName: gameStates, Assembly-CSharp
+        m_MethodName: changeScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: EntranceScene
+          m_BoolArgument: 0
+        m_CallState: 2
   DEBUG_MODE: 0
---- !u!114 &7268447672904055829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2133691883149334062}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48396f57068cb9a4089254ce75f20e81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inputDirection: {x: 0, y: 0}
-  pressTime: 0
-  buttonIsHeld: 0
-  maxPressTime: 2
-  maxDistance: 3
---- !u!114 &6215651328044691682
+--- !u!114 &1402841059254069599
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -155,15 +150,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 2133691883149334062}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08113b6c796394e49849e5991fdd4695, type: 3}
+  m_Script: {fileID: 11500000, guid: 68c162e646ba4c04399ee109905e0144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   objectTransform: {fileID: 2133691883149334056}
-  maxHoldTime: 3
-  teleportDistanceMultiple: 3
-  maxTeleportDistance: 5
+  maxHoldTime: 5
+  teleportDistanceMultiple: 1
+  maxTeleportDistance: 10
   cooldown: 3
-  randomnessRangeMin: -5
+  randomnessRangeMin: 0
   randomnessRangeMax: 5
   randomTeleport: 1
   teleportVector: {x: 0, y: 0}
@@ -305,6 +300,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6215651327134853467}
   - component: {fileID: 6215651327134853466}
+  - component: {fileID: 4788614289636767101}
   m_Layer: 8
   m_Name: Attack
   m_TagString: Untagged
@@ -342,6 +338,25 @@ CapsuleCollider2D:
   m_Offset: {x: -0.11164069, y: 0}
   m_Size: {x: 0.9465624, y: 0.45534}
   m_Direction: 1
+--- !u!114 &4788614289636767101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6215651327134853444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57caa0aec15d1544a97e87b7342b0bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 5
+  trapReachedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  trapHitSound: {fileID: 0}
+  disableOnHit: 0
+  DEBUG_MODE: 0
 --- !u!1 &6215651327789634070
 GameObject:
   m_ObjectHideFlags: 0
