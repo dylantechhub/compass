@@ -432,7 +432,7 @@ PrefabInstance:
         type: 3}
       propertyPath: playerPosition
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2013035200}
     - target: {fileID: 3559279118598793524, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
         type: 3}
       propertyPath: goalPositions.Array.size
@@ -526,6 +526,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4879748534588404190, guid: 58f6084e849559d42ab47bcab36ade26,
     type: 3}
   m_PrefabInstance: {fileID: 4879748535092647168}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2013035200 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2133691883149334056, guid: e676938a3f6be15488c352a244313a72,
+    type: 3}
+  m_PrefabInstance: {fileID: 667575808}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2080644596
 PrefabInstance:
