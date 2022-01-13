@@ -10,6 +10,7 @@ public class PlayerInputToAnimator : MonoBehaviour
 
     [Header ("***Attack Input Animation***")]
     public bool isAttacking = false;
+    public bool isDead = false;
 
     // Update is called once per frame
     void Update()
@@ -29,6 +30,12 @@ public class PlayerInputToAnimator : MonoBehaviour
             isAttacking = false;
         }
 
+        anim.SetBool("IsDead", isDead);
         anim.SetBool("IsAttacking", isAttacking);
+    }
+
+    public void PlayerDied()
+    {
+        isDead = true;
     }
 }
