@@ -301,7 +301,7 @@ GameObject:
   - component: {fileID: 6215651327134853467}
   - component: {fileID: 6215651327134853466}
   - component: {fileID: 4788614289636767101}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Attack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -332,7 +332,7 @@ CapsuleCollider2D:
   m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.11164069, y: 0}

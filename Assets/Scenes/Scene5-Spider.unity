@@ -344,6 +344,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e676938a3f6be15488c352a244313a72, type: 3}
+--- !u!4 &1512644004 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2133691883149334056, guid: e676938a3f6be15488c352a244313a72,
+    type: 3}
+  m_PrefabInstance: {fileID: 1255808606}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1665669615
 GameObject:
   m_ObjectHideFlags: 0
@@ -501,11 +507,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1355661159254236787, guid: 2f197a3ba3cfcf749a85a9865dd10262,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1766475866607629265}
+    - target: {fileID: 1766475867773746751, guid: 2f197a3ba3cfcf749a85a9865dd10262,
+        type: 3}
+      propertyPath: DEBUG_MODE
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1766475867829850881, guid: 2f197a3ba3cfcf749a85a9865dd10262,
+        type: 3}
+      propertyPath: tracking
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1766475867829850881, guid: 2f197a3ba3cfcf749a85a9865dd10262,
+        type: 3}
+      propertyPath: physicsMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1766475867829850881, guid: 2f197a3ba3cfcf749a85a9865dd10262,
         type: 3}
       propertyPath: transformToTrack
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1512644004}
     - target: {fileID: 1766475867829850882, guid: 2f197a3ba3cfcf749a85a9865dd10262,
         type: 3}
       propertyPath: m_RootOrder
@@ -568,6 +594,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f197a3ba3cfcf749a85a9865dd10262, type: 3}
+--- !u!95 &1766475866607629265 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1766475867530926182, guid: 2f197a3ba3cfcf749a85a9865dd10262,
+    type: 3}
+  m_PrefabInstance: {fileID: 1766475866607629264}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4879748535092647168
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,12 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GargoyleArtController : MonoBehaviour
 {
     [Header ("*Refrences*")]
 
-    public Animator anime;
+    public Animator animator;
     public Transform playerPosition;
     public Transform gargoylePostion;
     public GargoylePathFollowing pathFollowing;
@@ -26,7 +24,14 @@ public class GargoyleArtController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+		if (usePlayerInput)
+		{
+            Debug.Log("Using player input!");
+		}
+        else
+		{
+            Debug.Log("Using AI input!");
+		}
     }
 
     // Update is called once per frame
@@ -40,12 +45,10 @@ public class GargoyleArtController : MonoBehaviour
         if (usePlayerInput)
         {
             GetPlayerInput();
-            Debug.Log("playerinput");
         }
         else
         {
             GetAIInput();
-            Debug.Log("AIinput");
         }
 
         // Player walking bool
@@ -61,45 +64,44 @@ public class GargoyleArtController : MonoBehaviour
         // Left & Right animations
         if (playerPosition.position.x < gargoylePostion.position.x && pathFollowing.enabled == true)
         {
-            anime.SetBool("Walking Left", true);
-            anime.SetBool("Walking Right", false);
-            anime.SetBool("Walking Forward", false);
-            Debug.Log("walking left now");
+            animator.SetBool("Walking Left", true);
+            animator.SetBool("Walking Right", false);
+            animator.SetBool("Walking Forward", false);
+            // Debug.Log("walking left now");
         }
         else if (playerPosition.position.x == gargoylePostion.position.x && pathFollowing.enabled == true)
         {
-            anime.SetBool("Walking Forward", true);
-            anime.SetBool("Walking Left", false);
-            anime.SetBool("Walking Right", false);
-            Debug.Log("walking forward now");
+            animator.SetBool("Walking Forward", true);
+            animator.SetBool("Walking Left", false);
+            animator.SetBool("Walking Right", false);
+            // Debug.Log("walking forward now");
         }
         else if (playerPosition.position.x > gargoylePostion.position.x && pathFollowing.enabled == true)
         {
-            anime.SetBool("Walking Right", true);
-            anime.SetBool("Walking Left", false);
-            anime.SetBool("Walking Forward", false);
-            Debug.Log("walking right now");
+            animator.SetBool("Walking Right", true);
+            animator.SetBool("Walking Left", false);
+            animator.SetBool("Walking Forward", false);
+            // Debug.Log("walking right now");
 
         }
-
 
         // Timer for fire breath
         if (timer >= timeBetweenAttacks && pathFollowing.enabled == true)
         {
-            anime.SetTrigger("Fire Attack");
+            animator.SetTrigger("Fire Attack");
             timer = 0f;
         }
 
         // Input parameters
-        anime.SetFloat("xInput", horizInput);
-        anime.SetFloat("yInput", vertInput);
+        animator.SetFloat("xInput", horizInput);
+        animator.SetFloat("yInput", vertInput);
     }
 
     public void GetPlayerInput()
     {
         if (Input.GetButton("Jump"))
         {
-            anime.SetTrigger("Player Input");
+            animator.SetTrigger("Player Input");
         }
 
         horizInput = Input.GetAxis("Horizontal");

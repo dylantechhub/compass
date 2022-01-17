@@ -356,6 +356,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4879748535092647168}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1521346516 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2133691883149334056, guid: e676938a3f6be15488c352a244313a72,
+    type: 3}
+  m_PrefabInstance: {fileID: 667575808}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1613380352
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -363,6 +369,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1917989815365615668, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.52927804
+      objectReference: {fileID: 0}
+    - target: {fileID: 1917989815365615668, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.09201658
+      objectReference: {fileID: 0}
+    - target: {fileID: 1917989815365615668, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.28859723
+      objectReference: {fileID: 0}
     - target: {fileID: 1953423374277562804, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
         type: 3}
       propertyPath: m_RootOrder
@@ -425,34 +446,59 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1953423374277562805, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953423374277562805, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953423375185179948, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953423375209297428, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953423375468660875, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953423375468660879, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3112834809816328997, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
         type: 3}
       propertyPath: playerPosition
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3559279118598793524, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
-        type: 3}
-      propertyPath: goalPositions.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3559279118598793524, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
+      objectReference: {fileID: 1521346516}
+    - target: {fileID: 4861077764026684282, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
         type: 3}
       propertyPath: goalPositions.Array.data[0]
       value: 
       objectReference: {fileID: 1714545886}
-    - target: {fileID: 3559279118598793524, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
+    - target: {fileID: 4861077764026684282, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
         type: 3}
       propertyPath: goalPositions.Array.data[1]
       value: 
       objectReference: {fileID: 1369039951}
-    - target: {fileID: 3559279118598793524, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
+    - target: {fileID: 4861077764026684282, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
         type: 3}
       propertyPath: goalPositions.Array.data[2]
       value: 
       objectReference: {fileID: 552687146}
+    - target: {fileID: 6529102106119519905, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
+        type: 3}
+      propertyPath: destroyOnDeath
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 987bbce9ceb53f649b163db9bfaeb1e4, type: 3}
 --- !u!1 &1665669615

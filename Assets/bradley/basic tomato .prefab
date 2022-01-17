@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8785385645595302351}
   - component: {fileID: 8785385645595302347}
   - component: {fileID: 2054506880}
+  - component: {fileID: -105923730260764374}
   m_Layer: 7
   m_Name: 'basic tomato '
   m_TagString: Untagged
@@ -156,3 +157,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoDestructOnStart: 1
   timer: 3
+--- !u!114 &-105923730260764374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8785385645595302350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: def85324a9bb3a74e9f5fd876944d9c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isActivated: 1
+  currentHealth: 1
+  maxHealth: 1
+  destroyOnDeath: 1
+  deathEffectPrefab: {fileID: 0}
+  damagedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  killedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  DEBUG_MODE: 0
