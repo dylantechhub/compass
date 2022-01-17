@@ -253,12 +253,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 305d27daa1167b04ebecb0fdcca55a67, type: 3}
---- !u!4 &385541066 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2133691883149334056, guid: e676938a3f6be15488c352a244313a72,
-    type: 3}
-  m_PrefabInstance: {fileID: 241191108}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,16 +402,21 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 385541066}
+      objectReference: {fileID: 1151051368}
     - target: {fileID: 5167429311744590020, guid: 0707d36ee3910c84cb690385480d44ff,
         type: 3}
       propertyPath: playerRef
       value: 
-      objectReference: {fileID: 385541066}
+      objectReference: {fileID: 1151051368}
     - target: {fileID: 5167429311744590021, guid: 0707d36ee3910c84cb690385480d44ff,
         type: 3}
       propertyPath: m_Name
       value: DeathKnightPrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 5167429312675319536, guid: 0707d36ee3910c84cb690385480d44ff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0707d36ee3910c84cb690385480d44ff, type: 3}
@@ -490,6 +489,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4de35338d2c52814b85790329f811287, type: 3}
+--- !u!4 &1151051368 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2133691883149334056, guid: e676938a3f6be15488c352a244313a72,
+    type: 3}
+  m_PrefabInstance: {fileID: 241191108}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1665669615
 GameObject:
   m_ObjectHideFlags: 0

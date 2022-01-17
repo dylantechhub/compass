@@ -350,6 +350,11 @@ PrefabInstance:
       propertyPath: currentHealth
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 6215651327134853444, guid: e676938a3f6be15488c352a244313a72,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e676938a3f6be15488c352a244313a72, type: 3}
 --- !u!50 &657715850 stripped
@@ -439,6 +444,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skull
       objectReference: {fileID: 0}
+    - target: {fileID: 1756082845375408552, guid: 4b1cb63220a881f49828fe9f72e456e8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1756082845375408553, guid: 4b1cb63220a881f49828fe9f72e456e8,
         type: 3}
       propertyPath: m_RootOrder
@@ -509,6 +519,21 @@ PrefabInstance:
       propertyPath: transformToTrack
       value: 
       objectReference: {fileID: 282839317}
+    - target: {fileID: 1756082845986096951, guid: 4b1cb63220a881f49828fe9f72e456e8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500545332353866537, guid: 4b1cb63220a881f49828fe9f72e456e8,
+        type: 3}
+      propertyPath: destroyOnDeath
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7787209439018226396, guid: 4b1cb63220a881f49828fe9f72e456e8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b1cb63220a881f49828fe9f72e456e8, type: 3}
 --- !u!1 &1665669615

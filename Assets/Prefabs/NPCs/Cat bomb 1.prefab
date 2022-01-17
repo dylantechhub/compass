@@ -179,11 +179,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6372179680872191867}
-  - component: {fileID: 6372179680872191861}
   - component: {fileID: 6372179680872191862}
-  - component: {fileID: 6372179680872191863}
   - component: {fileID: 8871314662362041391}
   - component: {fileID: 3078667800570775416}
+  - component: {fileID: 5345616422802658092}
   m_Layer: 6
   m_Name: Cat bomb 1
   m_TagString: Untagged
@@ -207,25 +206,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6372179680872191861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6372179680872191857}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57caa0aec15d1544a97e87b7342b0bce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 5
-  trapReachedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  trapHitSound: {fileID: 0}
-  disableOnHit: 0
-  DEBUG_MODE: 0
 --- !u!50 &6372179680872191862
 Rigidbody2D:
   serializedVersion: 4
@@ -247,27 +227,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &6372179680872191863
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6372179680872191857}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcddb14e94c5be640b0e8db72f174d22, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 1
-  currentPosition: 0
-  goalPositions:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  stopDistance: 0.1
-  avoidObject: {fileID: 0}
-  avoidDistance: 1
 --- !u!114 &8871314662362041391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -296,8 +255,8 @@ MonoBehaviour:
   - {fileID: 0}
   stopDistance: 1
   currentPosition: 0
-  wanderDistance: 0
-  stopWanderingDistance: 0
+  wanderDistance: 1.07
+  stopWanderingDistance: 0.1
   normalizedWanderDirection: {x: 0, y: 0}
   entityRigidbody: {fileID: 6372179680872191862}
   transformToTrack: {fileID: 0}
@@ -320,3 +279,27 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 3, y: 1}
   m_Direction: 1
+--- !u!114 &5345616422802658092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6372179680872191857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: def85324a9bb3a74e9f5fd876944d9c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isActivated: 1
+  currentHealth: 10
+  maxHealth: 10
+  destroyOnDeath: 0
+  deathEffectPrefab: {fileID: 0}
+  damagedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  killedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  DEBUG_MODE: 0
