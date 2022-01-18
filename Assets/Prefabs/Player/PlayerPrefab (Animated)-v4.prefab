@@ -290,6 +290,7 @@ MonoBehaviour:
   anim: {fileID: 2133691883815882228}
   input: {x: 0, y: 0}
   isAttacking: 0
+  isDead: 0
 --- !u!1 &6215651327134853444
 GameObject:
   m_ObjectHideFlags: 0

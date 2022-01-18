@@ -464,6 +464,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1953423375209297428, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1953423375468660875, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
         type: 3}
       propertyPath: m_Layer
@@ -472,6 +477,11 @@ PrefabInstance:
     - target: {fileID: 1953423375468660879, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
         type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953423375468660879, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
+        type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3112834809816328997, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
@@ -494,9 +504,34 @@ PrefabInstance:
       propertyPath: goalPositions.Array.data[2]
       value: 
       objectReference: {fileID: 552687146}
+    - target: {fileID: 4876009598313056469, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
+        type: 3}
+      propertyPath: m_Radius
+      value: 1.0235467
+      objectReference: {fileID: 0}
+    - target: {fileID: 4876009598313056469, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0695906
+      objectReference: {fileID: 0}
+    - target: {fileID: 4876009598313056469, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.03360355
+      objectReference: {fileID: 0}
+    - target: {fileID: 5645063152015146374, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
+        type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6529102106119519905, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
         type: 3}
       propertyPath: destroyOnDeath
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7145779228318372717, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
+        type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
