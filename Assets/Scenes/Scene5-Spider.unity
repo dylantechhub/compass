@@ -123,6 +123,31 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &284380899 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1766475867530926179, guid: 2f197a3ba3cfcf749a85a9865dd10262,
+    type: 3}
+  m_PrefabInstance: {fileID: 1766475866607629264}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &284380901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284380899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 242f6e252f6460a42980e7322d71473f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1766475866607629265}
+  mover: {fileID: 2059312029}
+  player: {fileID: 1512644004}
+  spidersVector: {x: 0, y: 0}
+  attackDistance: 1
+  currentDistance: 0
+  attacking: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -416,6 +441,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2059312029 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1766475867829850881, guid: 2f197a3ba3cfcf749a85a9865dd10262,
+    type: 3}
+  m_PrefabInstance: {fileID: 1766475866607629264}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e2e28271c848d344a17d0f57a41abaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2080644596
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -592,7 +629,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpiderRoot
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 743383553, guid: 2f197a3ba3cfcf749a85a9865dd10262, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2f197a3ba3cfcf749a85a9865dd10262, type: 3}
 --- !u!95 &1766475866607629265 stripped
 Animator:

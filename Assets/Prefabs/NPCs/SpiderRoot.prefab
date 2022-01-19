@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1766475867530926180}
   - component: {fileID: 1766475867530926182}
   - component: {fileID: 1766475867530926181}
-  - component: {fileID: 1355661159254236787}
+  - component: {fileID: 743383553}
   m_Layer: 6
   m_Name: SpiderArt
   m_TagString: Untagged
@@ -104,7 +104,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1355661159254236787
+--- !u!114 &743383553
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -113,14 +113,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1766475867530926179}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c7618f427a3b31489c25d0558b9b1c5, type: 3}
+  m_Script: {fileID: 11500000, guid: 242f6e252f6460a42980e7322d71473f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 1766475867530926182}
+  mover: {fileID: 1766475867829850881}
+  player: {fileID: 0}
   spidersVector: {x: 0, y: 0}
-  playersVector: {x: 0, y: 0}
-  attackDistance: 5
-  playerVectorMagnitude: 0
+  attackDistance: 2
+  currentDistance: 0
   attacking: 0
 --- !u!1 &1766475867773746749
 GameObject:
@@ -201,7 +202,6 @@ GameObject:
   - component: {fileID: 1766475867829850881}
   - component: {fileID: 1766475867829850880}
   - component: {fileID: 1766475867829850911}
-  - component: {fileID: 3913870871304588021}
   m_Layer: 6
   m_Name: SpiderRoot
   m_TagString: Untagged
@@ -295,27 +295,3 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.5
---- !u!114 &3913870871304588021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1766475867829850910}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: def85324a9bb3a74e9f5fd876944d9c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isActivated: 1
-  currentHealth: 10
-  maxHealth: 10
-  destroyOnDeath: 1
-  deathEffectPrefab: {fileID: 0}
-  damagedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  killedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  DEBUG_MODE: 0

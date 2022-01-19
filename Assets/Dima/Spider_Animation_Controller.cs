@@ -4,24 +4,30 @@ public class Spider_Animation_Controller : MonoBehaviour
 {
 	[Header("External references")]
 	public Animator animator;
+	public entityMover_01 mover;
+	public Transform player;
 	public Vector2 spidersVector = Vector2.zero;
-	public Vector2 playersVector = Vector2.zero;
+	
 	public float attackDistance = 5f;
-
+	public float currentDistance = 0;
 	[Header("Statistics")]
-	public float playerVectorMagnitude;
+	
 	public bool attacking = false;
 
 	/* Update() is called once per frame */
 	private void Update()
 	{
-		animator.SetFloat("moveX", spidersVector.x);
-		animator.SetFloat("moveY", spidersVector.y);
+		spidersVector = mover.runDirection;
+
+		animator.SetFloat("xIn", spidersVector.x);
+		animator.SetFloat("yIn", spidersVector.y);
 		animator.SetBool("attacking", attacking);
 
-		playerVectorMagnitude = playersVector.magnitude;
 
-		if(playerVectorMagnitude <= attackDistance)
+		currentDistance = Vector3.Distance(mover.transform.position, player.position);
+		
+
+		if(currentDistance<= attackDistance)
 		{
 			attacking = true;
 		}
