@@ -67,7 +67,9 @@ public class RandomTeleport : MonoBehaviour
 	{
 		if( randomTeleport )
 		{
-			randomVector = new Vector2( Random.Range( randomnessRangeMin, randomnessRangeMax ), Random.Range( randomnessRangeMin, randomnessRangeMax ) );
+			randomVector = Random.insideUnitCircle * Random.Range(randomnessRangeMin, randomnessRangeMax);
+			// only goes up
+			//randomVector = new Vector2( Random.Range( randomnessRangeMin, randomnessRangeMax ), Random.Range( randomnessRangeMin, randomnessRangeMax ) );
 			teleportVector += randomVector;
 		}
 	}

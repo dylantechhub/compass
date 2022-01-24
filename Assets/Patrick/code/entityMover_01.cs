@@ -16,7 +16,6 @@ public class entityMover_01 : MonoBehaviour
 	[Header("Vector stats")]
 	public Vector2 inputVector;
 	public Vector2 runDirection;
-	private Vector2 lastFramePosition;
 	public Vector2 wanderingGoalPosition;
 
 	[Header("Path following")]
@@ -188,18 +187,6 @@ public class entityMover_01 : MonoBehaviour
 		if( pathFollowing == true )
 		{
 			pathFollowingLogic();
-
 		}
-		//hack get movement direction
-		Vector2 currentFramePosition = transform.position;
-		runDirection = currentFramePosition - lastFramePosition;
-		runDirection.Normalize();
-		Debug.DrawRay(currentFramePosition, runDirection*10);
-		lastFramePosition = transform.position;
-
-
-
-
-
 	}
 }
