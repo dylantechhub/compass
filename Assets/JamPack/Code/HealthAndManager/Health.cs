@@ -24,13 +24,18 @@ public class Health : MonoBehaviour {
     // Called by traps when they are hit. Applies damage to the player
     // Pass a negative value to heal instead
     public void TakeDamage(int damageRecieved){
-        currentHealth = currentHealth - damageRecieved;
-        damagedEvent.Invoke();
-       
-        // if health is gone
-        if ( currentHealth <= 0){
-            DeadlyBlow(); // kill the player
+        if( isActivated)
+        {
+            currentHealth = currentHealth - damageRecieved;
+            damagedEvent.Invoke();
+
+            // if health is gone
+            if (currentHealth <= 0)
+            {
+                DeadlyBlow(); // kill the player
+            }
         }
+        
     }
 
     // We hit a trap. Since we are not passing in damage, we just kill the player outright 

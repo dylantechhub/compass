@@ -1284,8 +1284,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8871314662362041391, guid: 4095611a735782241adb67e62d701b4b,
         type: 3}
+      propertyPath: tracking
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871314662362041391, guid: 4095611a735782241adb67e62d701b4b,
+        type: 3}
       propertyPath: physicsMode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871314662362041391, guid: 4095611a735782241adb67e62d701b4b,
+        type: 3}
+      propertyPath: trackDistance
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871314662362041391, guid: 4095611a735782241adb67e62d701b4b,
+        type: 3}
+      propertyPath: wanderDistance
+      value: 3.66
       objectReference: {fileID: 0}
     - target: {fileID: 8871314662362041391, guid: 4095611a735782241adb67e62d701b4b,
         type: 3}
