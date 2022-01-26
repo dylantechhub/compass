@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1766475867530926180}
   - component: {fileID: 1766475867530926182}
   - component: {fileID: 1766475867530926181}
+  - component: {fileID: 743383553}
   m_Layer: 6
   m_Name: SpiderArt
   m_TagString: Untagged
@@ -103,6 +104,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &743383553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766475867530926179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 242f6e252f6460a42980e7322d71473f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1766475867530926182}
+  mover: {fileID: 1766475867829850881}
+  player: {fileID: 0}
+  spidersVector: {x: 0, y: 0}
+  attackDistance: 2
+  currentDistance: 0
+  attacking: 0
 --- !u!1 &1766475867773746749
 GameObject:
   m_ObjectHideFlags: 0

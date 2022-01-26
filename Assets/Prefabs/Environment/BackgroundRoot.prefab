@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8667771908726506474}
   - component: {fileID: 8667771908726506475}
   - component: {fileID: 8667771908726506472}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: WallLeft (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -144,7 +144,7 @@ GameObject:
   - component: {fileID: 8667771909706563576}
   - component: {fileID: 8667771909706563577}
   - component: {fileID: 8667771909706563582}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: WallTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -273,7 +273,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8667771909865757020}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BackgroundRoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -311,7 +311,7 @@ GameObject:
   - component: {fileID: 8667771909880118420}
   - component: {fileID: 8667771909880118421}
   - component: {fileID: 8667771909880118442}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: WallLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -443,7 +443,7 @@ GameObject:
   - component: {fileID: 8667771910148880768}
   - component: {fileID: 8667771910148880769}
   - component: {fileID: 8667771910148880774}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: WallBottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -574,6 +574,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: background
+      objectReference: {fileID: 0}
+    - target: {fileID: 2050341401931794253, guid: 4152515867e129c48b09aa3bad0c0e6c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2050341401931794255, guid: 4152515867e129c48b09aa3bad0c0e6c,
         type: 3}
