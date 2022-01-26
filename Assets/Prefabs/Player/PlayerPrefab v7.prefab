@@ -5204,8 +5204,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5979532213829041630}
   - component: {fileID: 5979532213829041631}
-  - component: {fileID: 2022435886}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Attack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5242,25 +5241,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.11164069, y: 0}
   m_Size: {x: 0.9465624, y: 0.45534}
   m_Direction: 1
---- !u!114 &2022435886
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5979532213829041633}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57caa0aec15d1544a97e87b7342b0bce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 5
-  trapReachedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  trapHitSound: {fileID: 0}
-  disableOnHit: 0
-  DEBUG_MODE: 0
 --- !u!1 &5979532213870458015
 GameObject:
   m_ObjectHideFlags: 0
@@ -5519,9 +5499,11 @@ GameObject:
   - component: {fileID: 5979532214086105697}
   - component: {fileID: 5979532214086105696}
   - component: {fileID: 6683463685407828998}
+  - component: {fileID: 5979532214086105711}
+  - component: {fileID: 5979532214086105698}
   - component: {fileID: 5979532214086105700}
-  - component: {fileID: 813665338}
-  - component: {fileID: 813665337}
+  - component: {fileID: 5979532214086105703}
+  - component: {fileID: 5979532214086105702}
   m_Layer: 8
   m_Name: PlayerPrefab v7
   m_TagString: Player
@@ -5560,9 +5542,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonDown: 0
+  clickAttack: 0
   inputVector: {x: 0, y: 0}
   movementForce: 90
-  playerRigidbody: {fileID: 813665338}
+  playerRigidbody: {fileID: 5979532214086105698}
+  capCollider: {fileID: 5979532213829041631}
   autoStart: 1
   isActivated: 1
 --- !u!114 &6683463685407828998
@@ -5578,12 +5562,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectTransform: {fileID: 5979532214086105697}
-  maxHoldTime: 2
-  teleportDistanceMultiple: 4
-  maxTeleportDistance: 8
+  maxHoldTime: 5
+  teleportDistanceMultiple: 1
+  maxTeleportDistance: 10
   cooldown: 3
-  randomnessRangeMin: 1
-  randomnessRangeMax: 2
+  randomnessRangeMin: 0
+  randomnessRangeMax: 5
   randomTeleport: 1
   teleportVector: {x: 0, y: 0}
   randomVector: {x: 0, y: 0}
@@ -5595,6 +5579,58 @@ MonoBehaviour:
   cooldownTimer: 0
   buttonHeld: 0
   cooldownActive: 0
+  onTeleport:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1271754063930004261}
+        m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!70 &5979532214086105711
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5979532214086105705}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.062039465, y: -0.12713951}
+  m_Size: {x: 0.5030712, y: 1.0988613}
+  m_Direction: 0
+--- !u!50 &5979532214086105698
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5979532214086105705}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 30
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!114 &5979532214086105700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5608,8 +5644,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isActivated: 1
-  currentHealth: 25
-  maxHealth: 25
+  currentHealth: 10
+  maxHealth: 10
   destroyOnDeath: 0
   deathEffectPrefab: {fileID: 0}
   damagedEvent:
@@ -5642,44 +5678,50 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 6683463685407828998}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   DEBUG_MODE: 0
---- !u!50 &813665338
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5979532214086105705}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 30
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 6200000, guid: 428ced4ac191799479c248da5c4e2569, type: 2}
-  m_Interpolate: 1
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 4
---- !u!70 &813665337
-CapsuleCollider2D:
+--- !u!114 &5979532214086105703
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5979532214086105705}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: 428ced4ac191799479c248da5c4e2569, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.5, y: 1}
-  m_Direction: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57caa0aec15d1544a97e87b7342b0bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 5
+  trapReachedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  trapHitSound: {fileID: 0}
+  disableOnHit: 0
+  DEBUG_MODE: 0
+--- !u!114 &5979532214086105702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5979532214086105705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a283980de92ad40a25fe61af090040, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5979532215153788977
 GameObject:
   m_ObjectHideFlags: 0

@@ -438,6 +438,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 909757634}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &909757637 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6683463685407828998, guid: cd1bdcacebc0acd40b992985d6d71a03,
+    type: 3}
+  m_PrefabInstance: {fileID: 909757634}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909757636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8de0730e1b7c46b43bb3e2d759849845, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &982909429
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,6 +566,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 1271559844515302676, guid: 4b1cb63220a881f49828fe9f72e456e8,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1271559844515302676, guid: 4b1cb63220a881f49828fe9f72e456e8,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1271559844515302678, guid: 4b1cb63220a881f49828fe9f72e456e8,
         type: 3}
@@ -782,6 +804,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5194555057055702538, guid: 802244a7202cd6a41bdfd9b9167577b5,
+        type: 3}
+      propertyPath: teleportScript
+      value: 
+      objectReference: {fileID: 909757637}
     - target: {fileID: 5194555057055702540, guid: 802244a7202cd6a41bdfd9b9167577b5,
         type: 3}
       propertyPath: m_Pivot.x
@@ -1041,6 +1068,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BackgroundRoot
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667771909880118420, guid: 494daa15ecdbacc4c923b7ad68bb69c2,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 494daa15ecdbacc4c923b7ad68bb69c2, type: 3}
