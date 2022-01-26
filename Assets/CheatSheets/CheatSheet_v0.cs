@@ -1,4 +1,7 @@
-﻿// [B] - Importing Libraries
+﻿#pragma warning disable 0219 //disables editor warnings
+#pragma warning disable 0414
+
+// [B] - Importing Libraries
 // [I] - Can access C# Directly 
 using System.Collections;
 using System.Collections.Generic;

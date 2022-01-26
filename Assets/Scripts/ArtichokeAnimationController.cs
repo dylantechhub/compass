@@ -1,3 +1,5 @@
+#pragma warning disable 0414 // disables editor warnings
+
 using UnityEngine;
 
 public class ArtichokeAnimationController : MonoBehaviour

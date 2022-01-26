@@ -74,7 +74,6 @@ public class SkullPathFollowing : MonoBehaviour
     {
         if (timerActive == true)
         {
-            Debug.Log("avoiding");
             // avoid 
             Vector2 vectorToGoal = (Vector2)goalPositions[currentPosition].position - (Vector2)transform.position;
             normalizedDirection = vectorToGoal.normalized;
@@ -96,7 +95,6 @@ public class SkullPathFollowing : MonoBehaviour
         // If skulls position is not same as player it will go towards it
         if (position != playersPosition && timerActive == false)
         {
-            Debug.Log("chasing");
 
             Vector2 vectorToGoal = (Vector2)goalPositions[currentPosition].position - (Vector2)transform.position;
             normalizedDirection = vectorToGoal.normalized;
