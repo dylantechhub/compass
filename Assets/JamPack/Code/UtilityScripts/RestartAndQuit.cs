@@ -1,3 +1,5 @@
+#pragma warning disable 0618 // disables editor warnings
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

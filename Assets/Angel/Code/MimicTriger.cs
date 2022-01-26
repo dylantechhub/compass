@@ -1,3 +1,5 @@
+#pragma warning disable 0108 // hides editor error message
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
