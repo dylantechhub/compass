@@ -1,4 +1,4 @@
-#pragma warning disable 0618 // disables script warning
+#pragma warning disable 0618 // disables editor warnings
 
 using System.Collections;
 using System.Collections.Generic;

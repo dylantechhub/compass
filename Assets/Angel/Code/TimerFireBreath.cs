@@ -1,6 +1,11 @@
-#pragma warning disable 8321 // function declared but not used.
+#pragma warning disable 8321 // disables editor warnings
 
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+using System.Threading;
+using System.Threading.Tasks;
 
 public enum CurrentState
 {
@@ -63,6 +68,11 @@ public class TimerFireBreath : MonoBehaviour
         void OnTriggerEnter2D(Collider2D collision)
         {
             ActivateAttack();
+        }
+
+        void OnTriggerExit2D(Collider2D collision)
+        {
+            
         }
 
         // Changes sprite to fire and changes the collider
