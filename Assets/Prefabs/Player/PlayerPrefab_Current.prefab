@@ -1,5 +1,51 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &514869023
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 514869024}
+  - component: {fileID: 514869025}
+  m_Layer: 8
+  m_Name: ProjectileLauncher
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &514869024
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514869023}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5979532214086105697}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &514869025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514869023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 346b6866534ae644280fabbc6da75ec4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shotPrefab: {fileID: 8249369800386194707, guid: 48076c706314f374ab785657446c8435,
+    type: 3}
+  speed: 5
 --- !u!1 &1271754063930004256
 GameObject:
   m_ObjectHideFlags: 0
@@ -5204,7 +5250,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5979532213829041630}
   - component: {fileID: 5979532213829041631}
-  m_Layer: 8
+  - component: {fileID: 4660695013069474615}
+  m_Layer: 9
   m_Name: Attack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5235,12 +5282,31 @@ CapsuleCollider2D:
   m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.11164069, y: 0}
   m_Size: {x: 0.9465624, y: 0.45534}
   m_Direction: 1
+--- !u!114 &4660695013069474615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5979532213829041633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57caa0aec15d1544a97e87b7342b0bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 3
+  trapReachedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  trapHitSound: {fileID: 0}
+  disableOnHit: 0
+  DEBUG_MODE: 0
 --- !u!1 &5979532213870458015
 GameObject:
   m_ObjectHideFlags: 0
@@ -5281,8 +5347,9 @@ AudioSource:
   m_GameObject: {fileID: 5979532213870458015}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b981a4d8c4b943e42add878ff9a657fd, type: 3}
+  OutputAudioMixerGroup: {fileID: 1621404895351243035, guid: e9170c3016b78ba408a1176117cb5797,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: a15120c2bf2be464ab3d8fc2a0c91043, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -5502,10 +5569,9 @@ GameObject:
   - component: {fileID: 5979532214086105711}
   - component: {fileID: 5979532214086105698}
   - component: {fileID: 5979532214086105700}
-  - component: {fileID: 5979532214086105703}
   - component: {fileID: 5979532214086105702}
   m_Layer: 8
-  m_Name: PlayerPrefab v7
+  m_Name: PlayerPrefab_Current
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5526,6 +5592,7 @@ Transform:
   - {fileID: 5979532213999150579}
   - {fileID: 5979532215153788974}
   - {fileID: 3100713201479151965}
+  - {fileID: 514869024}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5542,11 +5609,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonDown: 0
-  clickAttack: 0
   inputVector: {x: 0, y: 0}
   movementForce: 90
   playerRigidbody: {fileID: 5979532214086105698}
-  capCollider: {fileID: 5979532213829041631}
   autoStart: 1
   isActivated: 1
 --- !u!114 &6683463685407828998
@@ -5562,12 +5627,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectTransform: {fileID: 5979532214086105697}
-  maxHoldTime: 5
-  teleportDistanceMultiple: 1
-  maxTeleportDistance: 10
+  maxHoldTime: 3
+  teleportDistanceMultiple: 4
+  maxTeleportDistance: 7
   cooldown: 3
-  randomnessRangeMin: 0
-  randomnessRangeMax: 5
+  randomnessRangeMin: -3
+  randomnessRangeMax: 3
   randomTeleport: 1
   teleportVector: {x: 0, y: 0}
   randomVector: {x: 0, y: 0}
@@ -5604,11 +5669,11 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.062039465, y: -0.12713951}
-  m_Size: {x: 0.5030712, y: 1.0988613}
+  m_Offset: {x: -0.05205719, y: -0.31181186}
+  m_Size: {x: 0.34335455, y: 0.7295166}
   m_Direction: 0
 --- !u!50 &5979532214086105698
 Rigidbody2D:
@@ -5644,8 +5709,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isActivated: 1
-  currentHealth: 10
-  maxHealth: 10
+  currentHealth: 30
+  maxHealth: 30
   destroyOnDeath: 0
   deathEffectPrefab: {fileID: 0}
   damagedEvent:
@@ -5690,25 +5755,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  DEBUG_MODE: 0
---- !u!114 &5979532214086105703
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5979532214086105705}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57caa0aec15d1544a97e87b7342b0bce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 5
-  trapReachedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  trapHitSound: {fileID: 0}
-  disableOnHit: 0
   DEBUG_MODE: 0
 --- !u!114 &5979532214086105702
 MonoBehaviour:

@@ -223,31 +223,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &284380899 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1766475867530926179, guid: 2f197a3ba3cfcf749a85a9865dd10262,
-    type: 3}
-  m_PrefabInstance: {fileID: 1766475866607629264}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &284380901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 284380899}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 242f6e252f6460a42980e7322d71473f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 1766475866607629265}
-  mover: {fileID: 2059312029}
-  player: {fileID: 1740714816}
-  spidersVector: {x: 0, y: 0}
-  attackDistance: 1
-  currentDistance: 0
-  attacking: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -819,18 +794,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1740714815}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2059312029 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1766475867829850881, guid: 2f197a3ba3cfcf749a85a9865dd10262,
-    type: 3}
-  m_PrefabInstance: {fileID: 1766475866607629264}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e2e28271c848d344a17d0f57a41abaf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1766475866607629264
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -838,32 +801,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1355661159254236787, guid: 2f197a3ba3cfcf749a85a9865dd10262,
-        type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 1766475866607629265}
-    - target: {fileID: 1766475867530926181, guid: 2f197a3ba3cfcf749a85a9865dd10262,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 4445799617287978212, guid: d13101a830958a04ab3097cfb68cc561,
-        type: 3}
-    - target: {fileID: 1766475867773746751, guid: 2f197a3ba3cfcf749a85a9865dd10262,
-        type: 3}
-      propertyPath: DEBUG_MODE
+    - target: {fileID: 207683365, guid: 2f197a3ba3cfcf749a85a9865dd10262, type: 3}
+      propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1766475867829850881, guid: 2f197a3ba3cfcf749a85a9865dd10262,
-        type: 3}
-      propertyPath: tracking
-      value: 1
+    - target: {fileID: 207683365, guid: 2f197a3ba3cfcf749a85a9865dd10262, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1766475867829850881, guid: 2f197a3ba3cfcf749a85a9865dd10262,
-        type: 3}
-      propertyPath: physicsMode
-      value: 1
-      objectReference: {fileID: 0}
+    - target: {fileID: 284380901, guid: 2f197a3ba3cfcf749a85a9865dd10262, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1740714816}
     - target: {fileID: 1766475867829850881, guid: 2f197a3ba3cfcf749a85a9865dd10262,
         type: 3}
       propertyPath: transformToTrack
@@ -929,15 +878,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpiderRoot
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 743383553, guid: 2f197a3ba3cfcf749a85a9865dd10262, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f197a3ba3cfcf749a85a9865dd10262, type: 3}
---- !u!95 &1766475866607629265 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 1766475867530926182, guid: 2f197a3ba3cfcf749a85a9865dd10262,
-    type: 3}
-  m_PrefabInstance: {fileID: 1766475866607629264}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4879748535092647168
 PrefabInstance:
   m_ObjectHideFlags: 0

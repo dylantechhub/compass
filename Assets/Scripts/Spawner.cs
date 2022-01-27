@@ -7,8 +7,8 @@ public class Spawner : MonoBehaviour
     public float timer = 0;
     public float spawnTime = 2f;
 
-    public float radius = 5;
     public Transform thingToSpawn;
+    public float radius = 5;
 
     // Update is called once per frame
     void Update()

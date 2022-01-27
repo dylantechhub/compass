@@ -8,6 +8,7 @@
  */ 
 
 using UnityEngine;
+using UnityEngine.Events;
 
 public class RandomTeleport : MonoBehaviour
 {
@@ -19,8 +20,9 @@ public class RandomTeleport : MonoBehaviour
 	public float teleportDistanceMultiple = 1.0f; /* must be a value > 0 */
 	public float maxTeleportDistance = 10.0f;
 	public float cooldown = 3.0f;
-	public float randomnessRangeMin = 0.0f; /* randomness range refers to the random teleport vector */
-	public float randomnessRangeMax = 5.0f;
+    [Header("This should be negative to positive as the value used is between them")]
+	public float randomnessRangeMin = -3.0f; /* randomness range refers to the random teleport vector */
+	public float randomnessRangeMax = 3.0f;
 	public bool randomTeleport = true;
 
 	[Header("Statistics")] /* these values should not be manually changed */
@@ -34,6 +36,9 @@ public class RandomTeleport : MonoBehaviour
 	public float cooldownTimer = 0.0f;
 	public bool buttonHeld = false;
 	public bool cooldownActive = false;
+
+	[Header("Teleport Animation")]
+	public UnityEvent onTeleport;
 
 	public void CooldownLogic()
 	{
@@ -67,9 +72,7 @@ public class RandomTeleport : MonoBehaviour
 	{
 		if( randomTeleport )
 		{
-			randomVector = Random.insideUnitCircle * Random.Range(randomnessRangeMin, randomnessRangeMax);
-			// only goes up
-			//randomVector = new Vector2( Random.Range( randomnessRangeMin, randomnessRangeMax ), Random.Range( randomnessRangeMin, randomnessRangeMax ) );
+			randomVector = new Vector2( Random.Range( randomnessRangeMin, randomnessRangeMax ), Random.Range( randomnessRangeMin, randomnessRangeMax ) );
 			teleportVector += randomVector;
 		}
 	}
@@ -79,6 +82,7 @@ public class RandomTeleport : MonoBehaviour
 		transform.Translate( teleportVector );
 		cooldownActive = true;
 		cooldownTimer = cooldown;
+		onTeleport.Invoke(); // Particle System Activates on Teleport
 	}
 
 	public void UserInputVector()

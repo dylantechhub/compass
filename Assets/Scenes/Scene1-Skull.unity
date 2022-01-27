@@ -424,6 +424,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerPrefab v7
       objectReference: {fileID: 0}
+    - target: {fileID: 6683463685407828998, guid: cd1bdcacebc0acd40b992985d6d71a03,
+        type: 3}
+      propertyPath: maxHoldTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6683463685407828998, guid: cd1bdcacebc0acd40b992985d6d71a03,
+        type: 3}
+      propertyPath: randomnessRangeMax
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6683463685407828998, guid: cd1bdcacebc0acd40b992985d6d71a03,
+        type: 3}
+      propertyPath: randomnessRangeMin
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6683463685407828998, guid: cd1bdcacebc0acd40b992985d6d71a03,
+        type: 3}
+      propertyPath: teleportDistanceMultiple
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd1bdcacebc0acd40b992985d6d71a03, type: 3}
 --- !u!4 &909757635 stripped
@@ -557,6 +577,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1044783591, guid: 4b1cb63220a881f49828fe9f72e456e8, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1044783591, guid: 4b1cb63220a881f49828fe9f72e456e8, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 719345561885854025, guid: 4b1cb63220a881f49828fe9f72e456e8,
         type: 3}
       propertyPath: m_Layer

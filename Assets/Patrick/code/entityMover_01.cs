@@ -41,6 +41,9 @@ public class entityMover_01 : MonoBehaviour
 	public Transform transformToAvoid;
 	public float avoidDistance;
 
+	[Header("**Animation**")]
+	public GameObject skullAnim;
+
 	private Vector2 usersInputVector()
 	{
 		inputVector = new Vector2( Input.GetAxis("Horizontal"), Input.GetAxis("Vertical") );
@@ -189,4 +192,15 @@ public class entityMover_01 : MonoBehaviour
 			pathFollowingLogic();
 		}
 	}
+
+	public void OnTriggerEnter2D(Collider2D collision)
+	{
+		skullAnim.GetComponent<SkullArtController>().skullIsAttacking = true;
+	}
+	public void OnTriggerExit2D(Collider2D collision)
+	{
+		skullAnim.GetComponent<SkullArtController>().skullIsAttacking = false;
+	}
+
+
 }

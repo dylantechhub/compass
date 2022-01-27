@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: -232980090116900514}
   - component: {fileID: -1384325196809384655}
   - component: {fileID: -1853272701396736037}
+  - component: {fileID: 376617870330793721}
+  - component: {fileID: 1808911005073491660}
   m_Layer: 9
   m_Name: PlayerProjectile
   m_TagString: Untagged
@@ -65,7 +67,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -4843,3 +4845,36 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &376617870330793721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4036944807346545562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57caa0aec15d1544a97e87b7342b0bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 5
+  trapReachedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  trapHitSound: {fileID: 0}
+  disableOnHit: 1
+  DEBUG_MODE: 0
+--- !u!114 &1808911005073491660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4036944807346545562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e8033efe18bc354da303a48469e8b85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoDestructOnStart: 1
+  timer: 3
