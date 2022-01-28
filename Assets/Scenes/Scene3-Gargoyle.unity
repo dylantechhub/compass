@@ -306,12 +306,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &552687146 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4879748535632741162, guid: 58f6084e849559d42ab47bcab36ade26,
-    type: 3}
-  m_PrefabInstance: {fileID: 4879748535092647168}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &814938978
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -466,12 +460,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e37c3b96be45ec24b85205ca13d66eab, type: 3}
---- !u!4 &1369039951 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4879748534279598415, guid: 58f6084e849559d42ab47bcab36ade26,
-    type: 3}
-  m_PrefabInstance: {fileID: 4879748535092647168}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1494994535
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -609,21 +597,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1917989815365615668, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
-        type: 3}
-      propertyPath: m_Radius
-      value: 0.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 1917989815365615668, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: 0.09201658
-      objectReference: {fileID: 0}
-    - target: {fileID: 1917989815365615668, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: 0.18
-      objectReference: {fileID: 0}
     - target: {fileID: 1953423374277562804, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
         type: 3}
       propertyPath: m_RootOrder
@@ -684,36 +657,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gargoyle NPC
       objectReference: {fileID: 0}
-    - target: {fileID: 1953423374277562805, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
-        type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1953423374277562805, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1953423375185179948, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
-        type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1953423375209297428, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
-        type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1953423375468660875, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
-        type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1953423375468660879, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3112834809816328997, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
         type: 3}
       propertyPath: playerPosition
@@ -721,39 +664,9 @@ PrefabInstance:
       objectReference: {fileID: 814938979}
     - target: {fileID: 4861077764026684282, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
         type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4861077764026684282, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
-        type: 3}
-      propertyPath: playerPositions.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4861077764026684282, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
-        type: 3}
-      propertyPath: goalPositions.Array.data[0]
-      value: 
-      objectReference: {fileID: 1714545886}
-    - target: {fileID: 4861077764026684282, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
-        type: 3}
-      propertyPath: goalPositions.Array.data[1]
-      value: 
-      objectReference: {fileID: 1369039951}
-    - target: {fileID: 4861077764026684282, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
-        type: 3}
-      propertyPath: goalPositions.Array.data[2]
-      value: 
-      objectReference: {fileID: 552687146}
-    - target: {fileID: 4861077764026684282, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
-        type: 3}
       propertyPath: playerPositions.Array.data[0]
       value: 
       objectReference: {fileID: 814938979}
-    - target: {fileID: 6529102106119519905, guid: 987bbce9ceb53f649b163db9bfaeb1e4,
-        type: 3}
-      propertyPath: destroyOnDeath
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 987bbce9ceb53f649b163db9bfaeb1e4, type: 3}
 --- !u!1 &1665669615
@@ -822,12 +735,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1714545886 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4879748534588404190, guid: 58f6084e849559d42ab47bcab36ade26,
-    type: 3}
-  m_PrefabInstance: {fileID: 4879748535092647168}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &880970874846102321
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -788,6 +788,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e95fd1f3b2105f648992c73fa9f35a0a, type: 3}
+--- !u!1 &780831202 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7531169931051155822, guid: e95fd1f3b2105f648992c73fa9f35a0a,
+    type: 3}
+  m_PrefabInstance: {fileID: 780831201}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1124527372
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1139,10 +1145,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc13c4cb2de2e9442a8c9de40a5876f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skullPortal: {fileID: 0}
+  skullPortal: {fileID: 1489659129}
   catPortal: {fileID: 0}
   gargoylePortal: {fileID: 0}
-  slimePortal: {fileID: 0}
+  slimePortal: {fileID: 780831202}
   spiderPortal: {fileID: 0}
   plantMonsterPortal: {fileID: 0}
   deathNightPortal: {fileID: 0}
@@ -1375,6 +1381,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75b91ab778a6a9d48b82fed51e6ca990, type: 3}
+--- !u!1 &1489659129 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3295667144557077893, guid: 75b91ab778a6a9d48b82fed51e6ca990,
+    type: 3}
+  m_PrefabInstance: {fileID: 1489659128}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1572034400
 PrefabInstance:
   m_ObjectHideFlags: 0

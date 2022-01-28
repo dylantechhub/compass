@@ -73,12 +73,18 @@ public class NPCDeathDetection : MonoBehaviour
         // if entrance level, detect portal script
         currentScene = SceneManager.GetActiveScene().name;
         if (currentScene.Equals("EntranceScene")){
+			// 
             portalRef = FindObjectOfType<PortalReference>();
+			// set which portals are active or not 
+
         }else {
+			// in a room with a monster
             GameObject npc = GameObject.FindWithTag("NPC");
+			//
             if (npc != null){
                 Health npcHealth = npc.GetComponentInChildren<Health>();
                 if(npcHealth != null){
+					// subscribe to killed event
                     npcHealth.killedEvent.AddListener(NPCKilled);
                 }else{
                     Debug.LogWarning("Couldn't find Health");
@@ -90,6 +96,8 @@ public class NPCDeathDetection : MonoBehaviour
     }
 
     private void NPCKilled(){
+		Debug.Log(currentScene + " boss killed" );
+
         if (currentScene.Equals("Scene1-Skull")) {
             SkullDeath();
         } else if (currentScene.Equals("Scene2-Cat")) {

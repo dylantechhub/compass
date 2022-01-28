@@ -732,14 +732,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 207683365, guid: 2f197a3ba3cfcf749a85a9865dd10262, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 207683365, guid: 2f197a3ba3cfcf749a85a9865dd10262, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 284380901, guid: 2f197a3ba3cfcf749a85a9865dd10262, type: 3}
       propertyPath: player
       value: 

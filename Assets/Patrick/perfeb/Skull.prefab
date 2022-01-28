@@ -155,14 +155,14 @@ CapsuleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 487700745}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.011111021, y: -0.07036972}
-  m_Size: {x: 0.8185153, y: 1.2592566}
+  m_Size: {x: 1.59, y: 1.2592566}
   m_Direction: 0
 --- !u!50 &487700748
 Rigidbody2D:
@@ -554,12 +554,11 @@ GameObject:
   - component: {fileID: 1271559844515302678}
   - component: {fileID: 8788615024482589394}
   - component: {fileID: 1271559844515302679}
-  - component: {fileID: 1271559844515302676}
   - component: {fileID: 848430761}
   - component: {fileID: 848430760}
   m_Layer: 6
   m_Name: Skull
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -593,7 +592,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e2e28271c848d344a17d0f57a41abaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 3
   tracking: 0
   avoiding: 0
   physicsMode: 0
@@ -663,22 +662,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!58 &1271559844515302676
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1271559844515302672}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.010492086}
-  serializedVersion: 2
-  m_Radius: 0.6259047
 --- !u!70 &848430761
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -692,7 +675,7 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.031986557, y: 0}
+  m_Offset: {x: 0.09, y: 0}
   m_Size: {x: 0.5639731, y: 1}
   m_Direction: 0
 --- !u!114 &848430760
@@ -809,15 +792,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a452412ef2a52274e88ea52c21a5e870, type: 3}
---- !u!4 &1271559846194766732 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5721137200667763562, guid: a452412ef2a52274e88ea52c21a5e870,
-    type: 3}
-  m_PrefabInstance: {fileID: 6827724258060648678}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1271559846194766735 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5721137200667763561, guid: a452412ef2a52274e88ea52c21a5e870,
+    type: 3}
+  m_PrefabInstance: {fileID: 6827724258060648678}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1271559846194766732 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5721137200667763562, guid: a452412ef2a52274e88ea52c21a5e870,
     type: 3}
   m_PrefabInstance: {fileID: 6827724258060648678}
   m_PrefabAsset: {fileID: 0}

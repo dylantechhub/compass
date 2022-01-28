@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1953423374277562804}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Gargoyle NPC V1
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 1953423375185179953}
   - component: {fileID: 1953423375185179950}
   - component: {fileID: 1953423375185179951}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mimic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,16 +102,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1953423375468660875}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e65953002024d954db62b9ae53735ec0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2.08
   currentPosition: 0
-  goalPositions:
-  - {fileID: 0}
-  - {fileID: 0}
+  playerPositions:
   - {fileID: 0}
   stopDistance: 0.1
   normalizedDirection: {x: 0, y: 0}
@@ -130,7 +128,7 @@ MonoBehaviour:
   isActivated: 1
   currentHealth: 10
   maxHealth: 10
-  destroyOnDeath: 0
+  destroyOnDeath: 1
   deathEffectPrefab: {fileID: 0}
   damagedEvent:
     m_PersistentCalls:
@@ -203,9 +201,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.09201658, y: 0.18}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.35
 --- !u!1001 &3112834809945361436
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -239,6 +237,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8587251788331033213, guid: ffb01a265e79c094ca8f01cb2e2d66a3,
         type: 3}
+    - target: {fileID: 3470295030588570120, guid: 24de46e5522b9474f9c0e956cc5c475e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3470295030881748109, guid: 24de46e5522b9474f9c0e956cc5c475e,
         type: 3}
       propertyPath: m_RootOrder
@@ -299,20 +302,25 @@ PrefabInstance:
       propertyPath: goalPositions.Array.data[0]
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3470295030881748114, guid: 24de46e5522b9474f9c0e956cc5c475e,
+        type: 3}
+      propertyPath: m_GravityScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3470295030881748115, guid: 24de46e5522b9474f9c0e956cc5c475e,
         type: 3}
       propertyPath: m_Size.x
-      value: 0.8576385
+      value: 0.38
       objectReference: {fileID: 0}
     - target: {fileID: 3470295030881748115, guid: 24de46e5522b9474f9c0e956cc5c475e,
         type: 3}
       propertyPath: m_Size.y
-      value: 1.1376692
+      value: 0.71
       objectReference: {fileID: 0}
     - target: {fileID: 3470295030881748115, guid: 24de46e5522b9474f9c0e956cc5c475e,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3470295030881748115, guid: 24de46e5522b9474f9c0e956cc5c475e,
         type: 3}
@@ -332,12 +340,17 @@ PrefabInstance:
     - target: {fileID: 3470295030881748115, guid: 24de46e5522b9474f9c0e956cc5c475e,
         type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3470295030881748119, guid: 24de46e5522b9474f9c0e956cc5c475e,
         type: 3}
       propertyPath: m_Name
       value: Gargoyle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470295030881748119, guid: 24de46e5522b9474f9c0e956cc5c475e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3470295030881748113, guid: 24de46e5522b9474f9c0e956cc5c475e, type: 3}

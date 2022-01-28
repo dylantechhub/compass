@@ -569,10 +569,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1022749357191561293}
-  - component: {fileID: 6258849212103851931}
   m_Layer: 6
   m_Name: SlimeBase
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -592,22 +591,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &6258849212103851931
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6555099906979044792}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.033908367, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.53390837
 --- !u!1 &7790270810628843055
 GameObject:
   m_ObjectHideFlags: 0
