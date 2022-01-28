@@ -541,7 +541,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trigger: {fileID: 719345561885854025}
   skull: {fileID: 1271559844515302672}
-  collider: {fileID: 1271559844515302676}
+  collider: {fileID: 719345561885854031}
 --- !u!1 &1271559844515302672
 GameObject:
   m_ObjectHideFlags: 0
@@ -552,7 +552,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1271559844515302673}
   - component: {fileID: 1271559844515302678}
-  - component: {fileID: 1970025825899570838}
+  - component: {fileID: 8788615024482589394}
   - component: {fileID: 1271559844515302679}
   - component: {fileID: 1271559844515302676}
   - component: {fileID: 848430761}
@@ -593,7 +593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e2e28271c848d344a17d0f57a41abaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
+  moveSpeed: 5
   tracking: 0
   avoiding: 0
   physicsMode: 0
@@ -609,12 +609,13 @@ MonoBehaviour:
   wanderDistance: 5
   stopWanderingDistance: 1
   normalizedWanderDirection: {x: 0, y: 0}
-  entityRigidbody: {fileID: 0}
+  entityRigidbody: {fileID: 1271559844515302679}
   transformToTrack: {fileID: 0}
   trackDistance: 0
   transformToAvoid: {fileID: 0}
   avoidDistance: 0
---- !u!114 &1970025825899570838
+  skullAnim: {fileID: 1271559846194766735}
+--- !u!114 &8788615024482589394
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -626,7 +627,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fd54dc243a868e4da9dffb684be217d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 5979532214086105705, guid: cd1bdcacebc0acd40b992985d6d71a03, type: 3}
   currentPosition: 0
   position: {x: 0, y: 0}
   goalPositions:
@@ -634,7 +635,7 @@ MonoBehaviour:
   stopDistance: 0.1
   normalizedDirection: {x: 0, y: 0}
   playersPosition: {x: 0, y: 0}
-  moveSpeed: 2.5
+  moveSpeed: 2
   stoppingDistance: 0.1
   cooldownTime: 0
   timer: 0
@@ -649,13 +650,13 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1271559844515302672}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.0001
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -691,8 +692,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.5, y: 1}
+  m_Offset: {x: 0.031986557, y: 0}
+  m_Size: {x: 0.5639731, y: 1}
   m_Direction: 0
 --- !u!114 &848430760
 MonoBehaviour:

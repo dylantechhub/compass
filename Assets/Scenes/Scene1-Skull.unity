@@ -750,6 +750,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 8788615024482589394, guid: 4b1cb63220a881f49828fe9f72e456e8,
+        type: 3}
+      propertyPath: goalPositions.Array.data[0]
+      value: 
+      objectReference: {fileID: 909757635}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b1cb63220a881f49828fe9f72e456e8, type: 3}
 --- !u!1 &1221193819 stripped
