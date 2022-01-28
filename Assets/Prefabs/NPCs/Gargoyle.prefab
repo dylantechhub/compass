@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 9153402442215934617}
   m_Layer: 0
   m_Name: Gargoyle
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,6 +111,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   stopDistance: 0.1
+  normalizedDirection: {x: 0, y: 0}
 --- !u!114 &9153402442215934617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,10 +126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 1
   currentPosition: 0
-  goalPositions:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  playerPositions: []
   stopDistance: 0.1
   normalizedDirection: {x: 0, y: 0}
 --- !u!1 &5705952939748305393
@@ -247,13 +245,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf699bdb429375a4e9d3c9db59377a62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anime: {fileID: 5705952939748305394}
+  animator: {fileID: 0}
   playerPosition: {fileID: 0}
   gargoylePostion: {fileID: 5705952939487614836}
   pathFollowing: {fileID: 9153402442215934617}
   horizInput: 0
   vertInput: 0
   isWalking: 0
-  usePlayerInput: 0
+  isAttacking: 0
   timer: 0
   timeBetweenAttacks: 5

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 372157510625783345}
   m_Layer: 0
   m_Name: SlimeSpawner
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45,6 +45,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: 0
   spawnTime: 100
-  radius: 5
   thingToSpawn: {fileID: 8885453733015997595, guid: a5ae61518f7186249bf887c38acb2bda,
     type: 3}
+  radius: 5
