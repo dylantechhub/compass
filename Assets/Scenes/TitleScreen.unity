@@ -607,6 +607,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 747624580}
   m_CullTransparentMesh: 1
+--- !u!1001 &758792341
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1827174217313435069, guid: fe3c6427d4348fa47a207285448d7304,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1827174217313435069, guid: fe3c6427d4348fa47a207285448d7304,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.0800834
+      objectReference: {fileID: 0}
+    - target: {fileID: 1827174217313435069, guid: fe3c6427d4348fa47a207285448d7304,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.46110278
+      objectReference: {fileID: 0}
+    - target: {fileID: 1827174217313435069, guid: fe3c6427d4348fa47a207285448d7304,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -17.827742
+      objectReference: {fileID: 0}
+    - target: {fileID: 1827174217313435069, guid: fe3c6427d4348fa47a207285448d7304,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1827174217313435069, guid: fe3c6427d4348fa47a207285448d7304,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1827174217313435069, guid: fe3c6427d4348fa47a207285448d7304,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1827174217313435069, guid: fe3c6427d4348fa47a207285448d7304,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1827174217313435069, guid: fe3c6427d4348fa47a207285448d7304,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1827174217313435069, guid: fe3c6427d4348fa47a207285448d7304,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1827174217313435069, guid: fe3c6427d4348fa47a207285448d7304,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7992873153276216056, guid: fe3c6427d4348fa47a207285448d7304,
+        type: 3}
+      propertyPath: m_Name
+      value: NPCDeathDetection
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fe3c6427d4348fa47a207285448d7304, type: 3}
 --- !u!1 &919245182 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7092107934216019493, guid: 93845ac0ba136874ca13e68aadb860ca,
