@@ -1,3 +1,6 @@
+//#define DEATH_NIGHT 
+/* remove the comment to enable the death night NPC */
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,7 +14,9 @@ public class NPCDeathDetection : MonoBehaviour
 	public string slimeScene = "Scene4-Shlime";
 	public string spiderScene = "Scene5-Spider";
 	public string plantMonsterScene = "Scene6-PlantMonster";
+	#if DEATH_NIGHT
 	public string deathNightScene = "Scene7-DeathKnight Boss";
+	#endif
 
 	[Header("Boolean death checkboxes")]
 	private bool skullDead;
@@ -20,7 +25,9 @@ public class NPCDeathDetection : MonoBehaviour
 	private bool slimeDead;
 	private bool spiderDead;
 	private bool plantMonsterDead;
+	#if DEATH_NIGHT
 	private bool deathNightDead;
+	#endif
 
 	private PortalReference portalReference;
 	private string currentScene;
@@ -96,10 +103,12 @@ public class NPCDeathDetection : MonoBehaviour
 			portalReference.plantMonsterPortal.SetActive(false);
 		}
 
+		#if DEATH_NIGHT
 		if(deathNightDead)
 		{
 			portalReference.deathNightPortal.SetActive(false);
 		}
+		#endif
 	}
 
 	private void NPCKilled()
@@ -133,12 +142,14 @@ public class NPCDeathDetection : MonoBehaviour
 		{
 			plantMonsterDead = true;
 			Debug.Log("Plant monster died!");
-		} 
+		}
+		#if DEATH_NIGHT
 		else if(currentScene.Equals(deathNightScene))
 		{
 			deathNightDead = true;
 			Debug.Log("Death night died!");
 		}
+		#endif
 		else
 		{
 			Debug.LogError("NPCKilled() in NPCDeathDetection has been called but the scene could not be found.\n" +
