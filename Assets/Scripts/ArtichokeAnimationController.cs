@@ -49,7 +49,7 @@ public class ArtichokeAnimationController : MonoBehaviour
 		Vector3 vectorFromArtichokeToPlayer = playerPosition - artichokePosition; // actually a vector now
 		float distanceFromArtichokeToPlayer = vectorFromArtichokeToPlayer.magnitude;
 
-		if(distanceFromArtichokeToPlayer >= distanceToStayClosed & timer <= timeToStayOpen & animator != null)
+		if(distanceFromArtichokeToPlayer <= distanceToStayClosed & timer <= timeToStayOpen & animator != null)
 		{
 			animator.SetBool(animatorBooleanVariable, true);
 			isOpened = true;
