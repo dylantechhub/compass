@@ -6,12 +6,27 @@ using UnityEngine;
 public class SelfDestruct : MonoBehaviour {
 
     public bool autoDestructOnStart = false;
-    public float timer;
+    public float deathAtThisTime;
+
+    public Transform spawnOnDestruct;
+    public bool spawnOnDestructToggle = false;
+    public float currentTimer = 0;
 
 	// Use this for initialization
 	void Start () {
-        if( autoDestructOnStart){
-            Destroy(gameObject, timer);
+        if( autoDestructOnStart && !spawnOnDestructToggle)
+        {
+            Destroy(gameObject, deathAtThisTime);
+        }
+    }
+
+    private void Update()
+    {
+        currentTimer += Time.deltaTime;
+        if( currentTimer > deathAtThisTime && spawnOnDestruct != null) {
+
+            Instantiate<Transform>(spawnOnDestruct, transform.position, transform.rotation);
+            Destroy(gameObject, 0);
         }
     }
 

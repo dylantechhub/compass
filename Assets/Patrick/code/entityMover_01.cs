@@ -41,8 +41,9 @@ public class entityMover_01 : MonoBehaviour
 	public Transform transformToAvoid;
 	public float avoidDistance;
 
-	[Header("**Animation**")]
-	public GameObject skullAnim;
+	// too hacky, use your own script, everything in the project is using this !
+	//[Header("**Animation**")]
+	//public GameObject skullAnim;
 
 	private Vector2 usersInputVector()
 	{
@@ -192,15 +193,24 @@ public class entityMover_01 : MonoBehaviour
 			pathFollowingLogic();
 		}
 	}
-
+/*
+	// SO HACKY!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	public void OnTriggerEnter2D(Collider2D collision)
 	{
-		skullAnim.GetComponent<SkullArtController>().skullIsAttacking = true;
+		SkullArtController sac = skullAnim.GetComponent<SkullArtController>();
+		if (sac != null)
+		{
+			sac.skullIsAttacking = true;
+		}
 	}
 	public void OnTriggerExit2D(Collider2D collision)
 	{
-		skullAnim.GetComponent<SkullArtController>().skullIsAttacking = false;
+		SkullArtController sac = skullAnim.GetComponent<SkullArtController>();
+		if (sac != null)
+		{
+			sac.skullIsAttacking = false;
+		}
 	}
-
+*/
 
 }

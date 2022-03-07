@@ -25,6 +25,8 @@ public class RandomTeleport : MonoBehaviour
 	public float randomnessRangeMax = 3.0f;
 	public bool randomTeleport = true;
 
+	public ContactFilter2D environmentMask; 
+
 	[Header("Statistics")] /* these values should not be manually changed */
 	public Vector2 teleportVector = Vector2.zero;
 	public Vector2 randomVector = Vector2.zero;
@@ -79,7 +81,22 @@ public class RandomTeleport : MonoBehaviour
 
 	public void Teleport()
 	{
-		transform.Translate( teleportVector );
+		RaycastHit2D[] hitsArray = new RaycastHit2D[5];
+		int hits = Physics2D.Raycast(transform.position, teleportVector, environmentMask, hitsArray);
+		if( hits > 0)
+        {
+
+			float lengthToWall = ((Vector2)transform.position - hitsArray[0].point).magnitude;
+
+			transform.Translate(teleportVector.normalized * lengthToWall * 0.8f);
+			Debug.Log("Teleport a little short");
+        }
+        else
+        {
+			transform.Translate(teleportVector);
+		}
+
+		
 		cooldownActive = true;
 		cooldownTimer = cooldown;
 		onTeleport.Invoke(); // Particle System Activates on Teleport

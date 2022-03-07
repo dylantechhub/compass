@@ -10,7 +10,7 @@ public class PlayerProjectileLauncher : MonoBehaviour
     private Vector2 input;
     private bool attackInput = false;
 
-    private float cooldown = 2;
+    public float cooldown = 1.5f;
     private float currentTimer = 0;
 
 
@@ -18,7 +18,7 @@ public class PlayerProjectileLauncher : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        currentTimer = cooldown; // so we cna shoot immediately 
     }
 
     private void Update()
@@ -29,10 +29,16 @@ public class PlayerProjectileLauncher : MonoBehaviour
 
         currentTimer += Time.deltaTime;
 
-        if(attackInput && currentTimer > cooldown && input.magnitude > 0.5f)
+        if (attackInput)
+        {
+            Debug.Log("Button Pressed");
+        }
+
+        if(attackInput && currentTimer > cooldown && input.magnitude > 0.2f)
         {
             Shoot ();
             currentTimer = 0;
+            Debug.Log("Shooting");
         }
     }
      

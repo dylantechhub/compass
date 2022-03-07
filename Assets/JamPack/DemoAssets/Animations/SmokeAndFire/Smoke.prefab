@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2918744240598973470}
   - component: {fileID: 5246565998161133893}
   - component: {fileID: 8077398752906105807}
+  - component: {fileID: 1960170318698380849}
   m_Layer: 0
   m_Name: Smoke
   m_TagString: Untagged
@@ -1480,10 +1481,14 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: 5165574535567133044, guid: db579bc344e0ccc4f96d82153f1046dd, type: 3}
-    - sprite: {fileID: -417951902275164094, guid: db579bc344e0ccc4f96d82153f1046dd, type: 3}
-    - sprite: {fileID: 536433686787881641, guid: db579bc344e0ccc4f96d82153f1046dd, type: 3}
-    - sprite: {fileID: -1119272584516512674, guid: db579bc344e0ccc4f96d82153f1046dd, type: 3}
+    - sprite: {fileID: 5165574535567133044, guid: db579bc344e0ccc4f96d82153f1046dd,
+        type: 3}
+    - sprite: {fileID: -417951902275164094, guid: db579bc344e0ccc4f96d82153f1046dd,
+        type: 3}
+    - sprite: {fileID: 536433686787881641, guid: db579bc344e0ccc4f96d82153f1046dd,
+        type: 3}
+    - sprite: {fileID: -1119272584516512674, guid: db579bc344e0ccc4f96d82153f1046dd,
+        type: 3}
     flipU: 0
     flipV: 0
   VelocityModule:
@@ -4807,3 +4812,20 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &1960170318698380849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8858645736769326824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e8033efe18bc354da303a48469e8b85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoDestructOnStart: 1
+  timer: 2
+  spawnOnDestruct: {fileID: 0}
+  spawnOnDestructToggle: 0
+  timerToDie: 0

@@ -130,6 +130,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 27349789077021705, guid: 63b58738a19e35a4c8d52ca0cd2c0844,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -2895252335875168040, guid: e9170c3016b78ba408a1176117cb5797,
+        type: 2}
     - target: {fileID: 3648150892927954918, guid: 63b58738a19e35a4c8d52ca0cd2c0844,
         type: 3}
       propertyPath: m_Name
@@ -1019,6 +1025,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlantMonsterRoot
+      objectReference: {fileID: 0}
+    - target: {fileID: 8085927273939681918, guid: 2d18c61404870b04ebb2eec807629f40,
+        type: 3}
+      propertyPath: m_TagString
+      value: NPC
       objectReference: {fileID: 0}
     - target: {fileID: 8231517796702936190, guid: 2d18c61404870b04ebb2eec807629f40,
         type: 3}

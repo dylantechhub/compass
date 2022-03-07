@@ -45,7 +45,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shotPrefab: {fileID: 8249369800386194707, guid: 48076c706314f374ab785657446c8435,
     type: 3}
-  speed: 5
+  speed: 6
+  cooldown: 1
 --- !u!1 &1271754063930004256
 GameObject:
   m_ObjectHideFlags: 0
@@ -5628,12 +5629,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectTransform: {fileID: 5979532214086105697}
   maxHoldTime: 3
-  teleportDistanceMultiple: 4
+  teleportDistanceMultiple: 5
   maxTeleportDistance: 7
   cooldown: 3
-  randomnessRangeMin: -3
-  randomnessRangeMax: 3
+  randomnessRangeMin: -1
+  randomnessRangeMax: 1
   randomTeleport: 1
+  environmentMask:
+    useTriggers: 0
+    useLayerMask: 1
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 1024
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
   teleportVector: {x: 0, y: 0}
   randomVector: {x: 0, y: 0}
   userInputVector: {x: 0, y: 0}
